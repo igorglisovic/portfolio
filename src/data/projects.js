@@ -73,7 +73,7 @@ const projectsData = [
       'Git',
       'Locomotive Scroll',
     ],
-    description: ['Just try it.'],
+    description: ['Just try it :)'],
     link: 'https://igorglisovic.com',
     github: 'https://github.com/igorglisovic/portfolio',
     img: { avif: portfolioAvif, webp: portfolioWebp, jpg: portfolioJpg },

@@ -48,7 +48,7 @@ a {
 }
 
 p {
-  font-size: clamp(0.9rem, 1vw, 1.2rem);
+  font-size: clamp(0.9rem, 1.1vw, 1.25rem);
 }
 
 h2 {

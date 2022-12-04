@@ -26,9 +26,9 @@ const AboutMe = React.forwardRef((_, ref) => {
               Short story about me.
             </h3>
             <p data-scroll data-scroll-speed="0.7" data-scroll-delay="0.04">
-              I’m very ambitious front-end developer looking for a role in
-              established IT company with the opportunity to work with the
-              latest technologies on challenging and diverse projects.
+              A kid from Serbia with a great love for programming and a goal to
+              do what he loves. Always curious, sociable, and responsible with
+              never a lack of hard work!
             </p>
             <p data-scroll data-scroll-speed="0.7" data-scroll-delay="0.04">
               Well-organized person, problem solver, and employee with great
@@ -36,8 +36,8 @@ const AboutMe = React.forwardRef((_, ref) => {
               shooter games.
             </p>
             <p data-scroll data-scroll-speed="0.7" data-scroll-delay="0.04">
-              I'm quietly confident, naturally curious, and perpetually working
-              on improving my skills every day.
+              I'm outright confident, naturally inquisitive, and perpetually
+              working on improving my skills every day.
             </p>
           </article>
           <div

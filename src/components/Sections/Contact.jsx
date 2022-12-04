@@ -53,7 +53,7 @@ const Contact = React.forwardRef((_, ref) => {
       <Container>
         <div className={classes['title']}>
           <h2 {...scrollAttributesV2}>Send me a message</h2>
-          <span {...scrollAttributesV2}>Feel free to contact me</span>
+          <span {...scrollAttributesV2}>Drop me a letter.</span>
         </div>
         {submited ? (
           <h3 className={classes.submited}>Message sent successfully.</h3>

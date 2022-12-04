@@ -17,7 +17,6 @@ const Hero = React.forwardRef((_, ref) => {
 
   return (
     <section ref={ref} className={classes.hero} id="hero" data-scroll-section>
-      <div className={classes['hero-bg__figures']}></div>
       <Container>
         <motion.div
           variants={variants}
@@ -38,8 +37,8 @@ const Hero = React.forwardRef((_, ref) => {
               data-scroll-delay="0.04"
             >
               I enjoy building beautiful, creative frontend products. Focused on
-              developing intuitive experiences that constantly grow with a keen
-              eye for creating engaging UI.
+              developing experiences that constantly grow with a keen eye for
+              creating engaging UI.
             </p>
             <p
               className={classes['hero-quote']}
