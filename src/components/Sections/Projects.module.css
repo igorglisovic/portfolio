@@ -1,0 +1,74 @@
+.projects {
+  padding: clamp(4rem, 7vw, 8rem) 0;
+  background-color: var(--main-clr);
+}
+
+.projects .project-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.projects h2 {
+  color: #fff;
+  position: relative;
+}
+
+.projects h2::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: var(--secondary-clr);
+  right: 3px;
+  bottom: 6px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.project-btn {
+  opacity: 0;
+  padding: 0.5em 1em;
+  color: #fff;
+  font-weight: 600;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  cursor: pointer;
+  border: 2px solid #fff;
+  transition: background-color 0.3s, color 0.3s, opacity 2s;
+}
+
+.project-btn:hover {
+  color: var(--main-clr);
+  background-color: #fff;
+}
+
+.projects h2 {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+@media only screen and (max-width: 600px) {
+  .projects h2::before {
+    width: 20px;
+    height: 2px;
+    right: 0px;
+    bottom: 6px;
+  }
+
+  .card-wrapper {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+}

@@ -1,0 +1,124 @@
+.aboutme {
+  padding: clamp(7rem, 8vw, 10rem) 0;
+  background-color: #fff;
+}
+
+.aboutme .title > h2 {
+  color: var(--main-clr);
+  margin-bottom: 50px;
+  position: relative;
+  border: 2px solid #9a9a9a;
+  padding: 0px 5px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutme-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutme-article {
+  width: 40%;
+}
+
+.aboutme-article p {
+  color: #5c5c5c;
+  margin-bottom: 15px;
+}
+
+.aboutme-skills {
+  position: relative;
+  width: 40%;
+}
+
+.aboutme h3 {
+  color: #404040;
+  margin-bottom: 15px;
+}
+
+.aboutme-skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.aboutme-skills__list li {
+  padding: 0.5em 1em;
+  background-color: #eee;
+  font-size: clamp(0.8rem, 1.1vw, 1.1rem);
+}
+
+.cv-btn {
+  color: var(--main-clr);
+  border: 2px solid var(--main-clr);
+  padding: 0.5em 1em;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+}
+
+.cv-btn:hover {
+  background-color: var(--main-clr);
+  color: #fff;
+}
+
+.aboutme-skills,
+.aboutme .title > h2,
+.aboutme-article {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+@media only screen and (max-width: 900px) {
+  .aboutme-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .aboutme-skills,
+  .aboutme-article {
+    width: 100%;
+  }
+
+  .cv-btn {
+    position: initial;
+    margin-top: 30px;
+    margin-inline: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutme-wrapper {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .aboutme-skills,
+  .aboutme-article {
+    width: 100%;
+  }
+
+  .aboutme {
+    padding: 4rem 0;
+  }
+
+  .cv-btn {
+    margin-top: 25px;
+    position: initial;
+    margin-inline: auto;
+  }
+
+  .aboutme-article p:last-of-type {
+    margin-bottom: 0;
+  }
+}

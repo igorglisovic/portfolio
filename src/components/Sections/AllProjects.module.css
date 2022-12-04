@@ -1,0 +1,30 @@
+.projects {
+  padding: clamp(6.5rem, 13vw, 7rem) 0;
+}
+
+.projects > div {
+  width: clamp(300px, 92vw, 1420px);
+}
+
+.projects-wrapper {
+  padding: clamp(1rem, 5vw, 4rem);
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.projects-wrapper h2 {
+  color: var(--dark-blue-clr);
+  margin-bottom: 20px;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+  .card-wrapper {
+    flex-direction: column;
+  }
+}

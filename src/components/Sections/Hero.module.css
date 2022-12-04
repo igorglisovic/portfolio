@@ -1,0 +1,137 @@
+.hero {
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--main-clr) 67%,
+    var(--secondary-clr) 33%
+  );
+  padding: clamp(6.5rem, 13vw, 16rem) 0;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  width: 50%;
+}
+
+.hero-article h1 {
+  font-size: clamp(3rem, 5vw, 6rem);
+  line-height: 0.92;
+  font-weight: 800;
+  margin-left: -2px;
+  position: relative;
+}
+
+.hero-article p {
+  font-size: clamp(0.83rem, 1.1vw, 1.3rem);
+}
+
+.hero-article h1::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: var(--secondary-clr);
+  top: -8px;
+  left: 3px;
+}
+
+.hero-personal__image {
+  position: relative;
+  width: clamp(210px, 20vw, 330px);
+  aspect-ratio: 1;
+  margin-right: 130px;
+}
+
+.hero-personal__image img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.hero-personal__image::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: clamp(210px, 20vw, 330px);
+  aspect-ratio: 1;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.hero-quote {
+  font-style: italic;
+  margin-top: 27.6px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .hero-personal__image {
+    margin-right: 80px;
+  }
+
+  .hero {
+    background: linear-gradient(
+      90deg,
+      var(--main-clr) 70%,
+      var(--secondary-clr) 30%
+    );
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .hero-personal__image {
+    margin-right: 60px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero {
+    background: linear-gradient(
+      180deg,
+      var(--main-clr) 50%,
+      var(--secondary-clr) 50%
+    );
+    height: auto;
+  }
+
+  .hero-wrapper {
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-article {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .hero-personal__image {
+    margin-top: 80px;
+  }
+
+  .hero-article h1::before {
+    width: 25px;
+    height: 2px;
+    top: -5px;
+    left: 1px;
+  }
+
+  .hero-quote {
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+}

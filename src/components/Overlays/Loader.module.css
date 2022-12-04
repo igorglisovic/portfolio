@@ -1,0 +1,50 @@
+.loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: var(--main-clr);
+  z-index: 9999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.loader > div {
+  display: flex;
+  position: relative;
+  gap: 20px;
+  overflow: hidden;
+  margin-top: -25px;
+}
+
+.loader span {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 6rem);
+  font-weight: 600;
+}
+
+.loader .line {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--secondary-clr);
+  bottom: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .loader > div {
+    gap: 10px;
+  }
+
+  .line {
+    height: 3px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .loader .line {
+    height: 3px;
+  }
+}

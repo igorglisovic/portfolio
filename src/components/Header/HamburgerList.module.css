@@ -1,0 +1,45 @@
+.navigation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.navigation ul li {
+  transition: transform 1s;
+  width: fit-content;
+}
+
+.navigation ul li span {
+  font-size: clamp(1.25rem, 1.5vw, 2rem);
+  cursor: pointer;
+  white-space: nowrap;
+  color: rgb(176, 176, 176);
+}
+
+.navigation ul li span a {
+  color: rgb(176, 176, 176);
+}
+
+.navigation .social-icons {
+  display: none;
+  width: 100%;
+  gap: 15px;
+  visibility: hidden;
+}
+
+.navigation .social-icons svg {
+  --main-clr: #5555ff;
+  color: var(--main-clr);
+  width: auto;
+}
+
+.navigation .social-icons svg:hover {
+  color: var(--secondary-clr);
+}
+
+@media only screen and (max-width: 900px) {
+  .navigation .social-icons {
+    display: flex;
+    visibility: initial;
+  }
+}
