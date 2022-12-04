@@ -53,7 +53,7 @@ const Projects = React.forwardRef((_, ref) => {
               <Card
                 key={project.id}
                 id={project.id}
-                skills={project.skills}
+                skills={project.skills.slice(0, 4)}
                 projectLink={project.link}
                 description={project.description}
                 imgs={project.img}

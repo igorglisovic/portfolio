@@ -26,6 +26,13 @@ import recipeWebp from '../assets/recipe.webp'
 import recipeAvif from '../assets/recipe.avif'
 import recipeSlider1 from '../assets/recipe-slider1.jpg'
 import recipeSlider2 from '../assets/recipe-slider2.jpg'
+// Portfolio images
+import portfolioJpg from '../assets/portfolio.jpg'
+import portfolioWebp from '../assets/portfolio.webp'
+import portfolioAvif from '../assets/portfolio.avif'
+import portfolioSlider1 from '../assets/portfolio-slider1.jpg'
+import portfolioSlider2 from '../assets/portfolio-slider2.jpg'
+import portfolioSlider3 from '../assets/portfolio-slider3.jpg'
 
 const projectsData = [
   {
@@ -48,13 +55,29 @@ const projectsData = [
     description: [
       'When you enter the Hexa Social Network for the first time, you need to register. Each subsequent time you will be able to log in with that account. After you create a hexa account, you can publish a post or leave a comment on a post. You can also change your account information such as email and username.',
       ,
-      'It is built in OOP Javascript and uses mockapi.io as a database where all posts, users and comments of the social network are located.',
+      'It is built in OOP Javascript and uses mockapi.io as a database where all posts, users, and comments of the social network are located.',
     ],
     link: 'https://igorglisovic.github.io/SocialNetwork/',
     github:
       'https://github.com/igorglisovic/igorglisovic.github.io/tree/master/SocialNetwork',
     img: { avif: hexaAvif, webp: hexaWebp, jpg: hexaJpg },
     imgSlider: [HexaSlider1, HexaSlider2, HexaSlider3, HexaSlider4],
+  },
+  {
+    id: 'portfolio',
+    title: 'My Portfolio',
+    skills: [
+      'React',
+      'CSS Modules',
+      'Framer Motion',
+      'Git',
+      'Locomotive Scroll',
+    ],
+    description: ['Just try it.'],
+    link: 'https://igorglisovic.com',
+    github: 'https://github.com/igorglisovic/portfolio',
+    img: { avif: portfolioAvif, webp: portfolioWebp, jpg: portfolioJpg },
+    imgSlider: [portfolioSlider1, portfolioSlider2, portfolioSlider3],
   },
   {
     id: 'bankist-app',
@@ -79,7 +102,7 @@ const projectsData = [
     title: 'Recipe app',
     skills: ['HTML', 'Sass', 'Javascript', 'Apis', 'Rest', 'Git'],
     description: [
-      'RecipeApp is a fictitious and minimalistic application where the user can explore new recipes and save favorite ones. By clicking on his favorite meals, he can see all the details about its preparation.',
+      'RecipeApp is a fictitious and minimalistic application where the user can explore new recipes and save favorite ones. By clicking on his favorite meals, he can see all the details about their preparation.',
     ],
     link: 'https://igorglisovic.github.io/RecipeApp/',
     github:

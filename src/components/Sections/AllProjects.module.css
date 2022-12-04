@@ -18,13 +18,16 @@
 }
 
 .card-wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
 }
 
 @media only screen and (max-width: 900px) {
   .card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
     flex-direction: column;
   }
 }
