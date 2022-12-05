@@ -111,13 +111,25 @@ const HamburgerList = ({
           transition={{ duration: 0.2, delay: 0.09, ease: 'easeInOut' }}
           className={classes['social-icons']}
         >
-          <a href="https://www.linkedin.com/in/igor-glisovic/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/igor-glisovic/"
+            target="_blank"
+            aria-label="linkedin"
+          >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="https://github.com/igorglisovic" target="_blank">
+          <a
+            href="https://github.com/igorglisovic"
+            target="_blank"
+            aria-label="github"
+          >
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href="https://www.youtube.com/@splajs" target="_blank">
+          <a
+            href="https://www.youtube.com/@splajs"
+            target="_blank"
+            aria-label="youtube"
+          >
             <FontAwesomeIcon icon={faYoutube} />
           </a>
         </motion.li>

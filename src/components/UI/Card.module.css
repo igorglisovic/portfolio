@@ -6,7 +6,7 @@
   transition: opacity 2s;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
+  position: relative;
 }
 
 .card img {
@@ -41,4 +41,25 @@
   color: black;
   padding: 0.4em 0.7em;
   background-color: #eee;
+}
+
+.learn-more {
+  aspect-ratio: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: clamp(0.5rem, 0.8vw, 0.75rem);
+  font-weight: 400;
+  background-color: var(--dark-blue-clr);
+  color: var(--secondary-clr);
+  border-radius: 50%;
+  padding: clamp(15px, 1.3vw, 20px);
+  letter-spacing: 4px;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 5;
 }

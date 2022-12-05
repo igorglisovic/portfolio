@@ -36,7 +36,7 @@ import portfolioSlider3 from '../assets/portfolio-slider3.jpg'
 
 const projectsData = [
   {
-    id: 'movies-app',
+    id: 'igor-movie',
     title: 'Igor Movie',
     skills: ['HTML', 'CSS', 'Javascript', 'Apis', 'Rest', 'Git'],
     description: [
