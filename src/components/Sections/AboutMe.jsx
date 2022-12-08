@@ -26,9 +26,9 @@ const AboutMe = React.forwardRef((_, ref) => {
               Short story about me.
             </h3>
             <p data-scroll data-scroll-speed="0.7" data-scroll-delay="0.04">
-              A kid from Serbia with a great love for programming and a goal to
-              do what he loves. Always curious, sociable, and responsible with
-              never a lack of hard work!
+              Developer from Serbia with a great love for programming and a goal
+              to do what he loves. Always curious, sociable, and responsible
+              with never a lack of hard work!
             </p>
             <p data-scroll data-scroll-speed="0.7" data-scroll-delay="0.04">
               Well-organized person, problem solver, and employee with great
