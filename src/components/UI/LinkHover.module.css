@@ -1,0 +1,11 @@
+.hover-line {
+  height: 2px;
+  background-color: var(--main-clr);
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.link-hover {
+  width: fit-content;
+}

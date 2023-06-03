@@ -1,0 +1,33 @@
+.notfound {
+  padding: clamp(6.5rem, 13vw, 12rem) 0;
+  background-color: #fff;
+}
+
+.notfound h1 {
+  color: rgb(75, 75, 75);
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 0.5em 1em;
+  color: var(--main-clr);
+  font-weight: 600;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  cursor: pointer;
+  border: 2px solid var(--main-clr);
+  transition: background-color 0.3s, color 0.3s, opacity 2s;
+}
+
+.btn a {
+  color: var(--main-clr);
+  transition: color 0.3s, opacity 2s;
+}
+
+.btn:hover a {
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: var(--main-clr);
+}

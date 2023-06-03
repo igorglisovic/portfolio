@@ -1,0 +1,102 @@
+.hamburger {
+  position: relative;
+  font-family: sans-serif;
+}
+
+.hamburger svg {
+  position: relative;
+  width: clamp(60px, 5vw, 80px);
+  cursor: pointer;
+  transition: stroke 0.3s;
+}
+
+.button-two {
+  position: relative;
+}
+
+.button-two .line {
+  animation: to-open-icon 1s forwards;
+}
+
+.button-two-hover .line {
+  animation: to-close-icon 1s forwards;
+}
+
+.button-two .line.top {
+  --rotation: -45deg;
+  transform-origin: 57px 53px;
+  --dash-array: 80;
+}
+
+.button-two .line.bottom {
+  --rotation: 45deg;
+  --dash-array: 80;
+  transform-origin: 56px 49px;
+}
+
+.nav-wrapper {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-right: clamp(4.5rem, 5vw, 7rem);
+  padding-left: clamp(2rem, 5vw, 3rem);
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  top: 0px;
+  right: 0px;
+  overflow: hidden;
+}
+
+@keyframes to-close-icon {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  40% {
+    stroke-dashoffset: 79.9;
+  }
+
+  60% {
+    stroke-dashoffset: 79.9;
+    stroke-dasharray: var(--dash-array);
+    transform: rotate(var(--rotation));
+    scale: 0.5;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: var(--dash-array);
+    transform: rotate(var(--rotation));
+    scale: 0.5;
+  }
+}
+
+@keyframes to-open-icon {
+  0% {
+    stroke-dashoffset: 0;
+    transform: rotate(var(--rotation));
+    scale: 0.5;
+  }
+
+  40% {
+    stroke-dashoffset: 79.9;
+    transform: rotate(var(--rotation));
+    scale: 0.5;
+  }
+
+  60% {
+    stroke-dashoffset: 79.9;
+    scale: 1;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    scale: 1;
+  }
+}
+
+@media only screen and (max-width: 835px) {
+  .hamburger {
+    --main-clr: #ffd300;
+  }
+}
