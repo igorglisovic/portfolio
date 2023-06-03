@@ -8,8 +8,11 @@ import LinkHover from '../UI/LinkHover.jsx'
 import { scrollAttributes } from '../../data/scrollAtributes.js'
 
 const Footer = () => {
+<<<<<<< HEAD
   const currentYear = new Date().getFullYear()
 
+=======
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
   return (
     <footer data-scroll-section>
       <Container>
@@ -46,7 +49,11 @@ const Footer = () => {
           data-scroll
           data-scroll-class="loading-active"
         >
+<<<<<<< HEAD
           <span>&copy; Igor Glisovic {currentYear}</span>
+=======
+          <span>&copy; Igor Glisovic 2022</span>
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
           <span>Made with React JS</span>
         </div>
       </Container>

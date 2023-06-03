@@ -150,6 +150,7 @@
   color: #fff;
 }
 
+<<<<<<< HEAD
 .project {
   margin-top: 20px;
 }
@@ -171,6 +172,10 @@
 
 .project p:last-of-type {
   margin-bottom: 0;
+=======
+.about-text {
+  font-size: clamp(0.9rem, 1.7vw, 1.2rem);
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
 }
 
 .main-title h4 {

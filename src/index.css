@@ -92,7 +92,10 @@ html.has-scroll-smooth {
   right: 0;
   bottom: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
 html.has-scroll-dragging {
   -webkit-user-select: none;
   -moz-user-select: none;

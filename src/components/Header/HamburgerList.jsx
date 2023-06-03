@@ -42,7 +42,11 @@ const HamburgerList = ({
   }
 
   return (
+<<<<<<< HEAD
     <nav className={classes.navigation}>
+=======
+    <div className={classes.navigation}>
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
       <ul>
         <motion.li
           variants={variants}
@@ -134,7 +138,11 @@ const HamburgerList = ({
           </a>
         </motion.li>
       </ul>
+<<<<<<< HEAD
     </nav>
+=======
+    </div>
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
   )
 }
 

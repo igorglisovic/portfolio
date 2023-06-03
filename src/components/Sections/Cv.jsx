@@ -1,8 +1,14 @@
 import Container from '../UI/Container'
 import classes from './Cv.module.css'
+<<<<<<< HEAD
 import personalImageWebp from '../../assets/igorglisovicCv.webp'
 import personalImagePng from '../../assets/igorglisovicCv.png'
 import personalImageAvif from '../../assets/igorglisovicCv.avif'
+=======
+import personalImageWebp from '../../assets/igorglisovic.webp'
+import personalImageJpg from '../../assets/igorglisovic.jpg'
+import personalImageAvif from '../../assets/igorglisovic.avif'
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
 import birthIcon from '../../assets/birth-icon.png'
 import emailIcon from '../../assets/email-icon.png'
 import flagIcon from '../../assets/flag-icon.png'
@@ -10,6 +16,10 @@ import codeIcon from '../../assets/code-icon.png'
 import aboutIcon from '../../assets/about-icon.png'
 import skillsIcon from '../../assets/skills-icon.png'
 import capIcon from '../../assets/cap-icon.png'
+<<<<<<< HEAD
+=======
+import computerIcon from '../../assets/computer-icon.png'
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
 import languageIcon from '../../assets/language-icon.png'
 import personIcon from '../../assets/person-icon.png'
 import otherIcon from '../../assets/other-icon.png'
@@ -27,12 +37,20 @@ const Cv = () => {
               <picture>
                 <source type="image/avif" srcSet={personalImageAvif} />
                 <source type="image/webp" srcSet={personalImageWebp} />
+<<<<<<< HEAD
                 <source type="image/jpeg" srcSet={personalImagePng} />
+=======
+                <source type="image/jpeg" srcSet={personalImageJpg} />
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
                 <img
                   alt="Igor Glisovic Frontend Developer"
                   width={330}
                   height={330}
+<<<<<<< HEAD
                   src={personalImagePng}
+=======
+                  src={personalImageJpg}
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
                 />
               </picture>
             </div>
@@ -53,7 +71,11 @@ const Cv = () => {
               <div className={classes['sidebar-row']}>
                 <div className={classes['sidebar-title']}>
                   <img src={emailIcon} alt="Email icon" />
+<<<<<<< HEAD
                   <span>E-mail address:</span>
+=======
+                  <span>E-mail adress:</span>
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
                 </div>
                 <h4>contact@igorglisovic.com</h4>
               </div>
@@ -103,6 +125,20 @@ const Cv = () => {
                 </div>
                 <h4>4+ Years</h4>
               </div>
+<<<<<<< HEAD
+=======
+              <div className={classes[classes['sidebar-row']]}>
+                <div className={classes['sidebar-title']}>
+                  <img
+                    src={codeIcon}
+                    className={classes.code}
+                    alt="Code icon"
+                  />
+                  <span>Wordpress</span>
+                </div>
+                <h4>3+ Years</h4>
+              </div>
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
             </div>
             <div className={`${classes['sidebar-section']}`}>
               <a
@@ -123,6 +159,7 @@ const Cv = () => {
                   className={classes.about}
                   alt="Contact icon"
                 />
+<<<<<<< HEAD
                 <h4>Projects</h4>
               </div>
               <div className={classes['main-content']}>
@@ -180,6 +217,20 @@ const Cv = () => {
                     development and working with RESTful APIs.
                   </p>
                 </div>
+=======
+                <h4>About me</h4>
+              </div>
+              <div className={classes['main-content']}>
+                <p className={classes['about-text']}>
+                  Enthusiastic, responsible, and hard-working IT person. Working
+                  on different projects helped me adapt to the changes quickly
+                  and made me a mature team worker. Ability to think through a
+                  problem coupled with the confidence to make ideas heard.
+                  Excited to pursue new companies to grow my skills while
+                  facilitating the empowerment and vocalization of marginalized
+                  communities.
+                </p>
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
               </div>
             </div>
             <div className={classes['main-section']}>
@@ -200,6 +251,7 @@ const Cv = () => {
                   <ul>
                     <li>
                       • Advanced programming skills and experience in
+<<<<<<< HEAD
                       JavaScript;
                     </li>
                     <li>
@@ -217,10 +269,58 @@ const Cv = () => {
                       Library;
                     </li>
                     <li>• Good experience and skills with ChatGPT;</li>
+=======
+                      JavaScript, Node.js;
+                    </li>
+                    <li>
+                      • Advanced coding skills and experience in HTML, CSS,
+                      SASS, Bootstrap;
+                    </li>
+                    <li>
+                      • Advanced skills and experience in Wordpress, WebFlow;
+                    </li>
+                    <li>
+                      • Good programming skills and experience in React.js;
+                    </li>
+                    <li>
+                      • Good programming skills and experience in C/C++ and C#;
+                    </li>
+                    <li>
+                      • Good experience and skills with APIs (Http requests);
+                    </li>
+                    <li>• Good experience and skills with Git;</li>
+                  </ul>
+                </div>
+                <div className={classes['main-row']}>
+                  <div className={classes['main-row__title']}>
+                    <img
+                      src={computerIcon}
+                      className={classes.computer}
+                      alt="Computer icon"
+                    />
+                    <span>Computer</span>
+                  </div>
+                  <ul>
+                    <li>
+                      • Excellent skills of use of Microsoft Office and Libre
+                      Office suites
+                    </li>
+                    <li>
+                      • Good operating system usage skills (Windows/Linux
+                      systems)
+                    </li>
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
                     <li>
                       • Excellent Raster and Vector graphics skills (Adobe
                       Photoshop, Figma)
                     </li>
+<<<<<<< HEAD
+=======
+                    <li>
+                      • Good computer hardware servicing skills (onboard part
+                      replacement – soldering techniques)
+                    </li>
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
                   </ul>
                 </div>
                 <div className={classes['main-row']}>
@@ -233,8 +333,13 @@ const Cv = () => {
                     <span>Languages</span>
                   </div>
                   <ul>
+<<<<<<< HEAD
                     <li>• Serbian (native)</li>
                     <li>• English</li>
+=======
+                    <li>• Serbian native</li>
+                    <li>• English - B2 (learned during high school)</li>
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
                   </ul>
                 </div>
                 <div className={classes['main-row']}>
@@ -247,6 +352,7 @@ const Cv = () => {
                     <span>Personality</span>
                   </div>
                   <ul>
+<<<<<<< HEAD
                     <li>
                       • I thrive in collaborative environments and believe that
                       the best results are achieved through teamwork.
@@ -266,6 +372,15 @@ const Cv = () => {
                       • I have a knack for identifying challenges and coming up
                       with effective solutions.
                     </li>
+=======
+                    <li>• Team player</li>
+                    <li>• Motivated</li>
+                    <li>• Always curious</li>
+                    <li>• Responsible</li>
+                    <li>• A problem solver</li>
+                    <li>• Very organised</li>
+                    <li>• Honest</li>
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
                   </ul>
                 </div>
                 <div className={classes['main-row']}>
@@ -274,7 +389,11 @@ const Cv = () => {
                     <span>Other</span>
                   </div>
                   <ul>
+<<<<<<< HEAD
                     <li>• Driving license: B, M, AM (EU Directive 2020)</li>
+=======
+                    <li>• Driving licence: B, M, AM (EU Directive 2020)</li>
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
                   </ul>
                 </div>
               </div>
@@ -319,7 +438,11 @@ const Cv = () => {
                     <span>Sep 2018 - June 2022</span>
                   </div>
                   <div>
+<<<<<<< HEAD
                     <h5>Technical High School - Information Technology</h5>
+=======
+                    <h5>Technical High School - Information Tehnology</h5>
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
                     <div className={classes['main-row__subtitle']}>
                       <img
                         src={homeIcon}
@@ -332,7 +455,11 @@ const Cv = () => {
                 </div>
               </div>
             </div>
+<<<<<<< HEAD
             <span className={classes.edit}>Last edit: February 2023.</span>
+=======
+            <span className={classes.edit}>Last edit: October 2022.</span>
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
           </main>
         </div>
       </Container>

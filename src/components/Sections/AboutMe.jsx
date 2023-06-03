@@ -60,14 +60,20 @@ const AboutMe = React.forwardRef((_, ref) => {
               <li>CSS</li>
               <li>Javascript</li>
               <li>React</li>
+<<<<<<< HEAD
               <li>Redux</li>
+=======
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
               <li>Sass</li>
               <li>Bootstrap</li>
               <li>Wordpress</li>
               <li>Git</li>
+<<<<<<< HEAD
               <li>GitHub</li>
               <li>Photoshop</li>
               <li>Figma</li>
+=======
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
             </ul>
             <Link
               data-scroll

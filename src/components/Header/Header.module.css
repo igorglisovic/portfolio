@@ -1,4 +1,5 @@
 header {
+<<<<<<< HEAD
   position: absolute;
   width: 100%;
   z-index: 999;
@@ -8,6 +9,11 @@ header {
   left: initial;
   right: initial;
   bottom: initial;
+=======
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
 }
 
 header .header-wrapper {
@@ -18,6 +24,12 @@ header .header-wrapper {
   padding-top: clamp(0rem, 2vw, 1.2rem);
 }
 
+<<<<<<< HEAD
+=======
+header .logo {
+}
+
+>>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
 header .logo a {
   color: var(--secondary-clr);
   text-decoration: none;
