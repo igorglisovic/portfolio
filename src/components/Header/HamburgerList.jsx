@@ -42,107 +42,101 @@ const HamburgerList = ({
   }
 
   return (
-<<<<<<< HEAD
     <nav className={classes.navigation}>
-=======
-    <div className={classes.navigation}>
->>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
-      <ul>
-        <motion.li
-          variants={variants}
-          initial="hidden"
-          animate={isOpen ? 'show' : ''}
-          transition={{ duration: 0.2, delay: 0, ease: 'easeInOut' }}
-        >
-          <LinkHover
-            onClick={() => {
-              onClickHandler(heroRef)
-            }}
+      <div className={classes.navigation}>
+        <ul>
+          <motion.li
+            variants={variants}
+            initial="hidden"
+            animate={isOpen ? 'show' : ''}
+            transition={{ duration: 0.2, delay: 0, ease: 'easeInOut' }}
           >
-            <Link to="/">Home</Link>
-          </LinkHover>
-        </motion.li>
-        {homePage && (
-          <>
-            <motion.li
-              variants={variants}
-              initial="hidden"
-              animate={isOpen ? 'show' : ''}
-              transition={{ duration: 0.2, delay: 0.03, ease: 'easeInOut' }}
+            <LinkHover
+              onClick={() => {
+                onClickHandler(heroRef)
+              }}
             >
-              <LinkHover
-                onClick={() => {
-                  onClickHandler(aboutMeRef)
-                }}
+              <Link to="/">Home</Link>
+            </LinkHover>
+          </motion.li>
+          {homePage && (
+            <>
+              <motion.li
+                variants={variants}
+                initial="hidden"
+                animate={isOpen ? 'show' : ''}
+                transition={{ duration: 0.2, delay: 0.03, ease: 'easeInOut' }}
               >
-                About Me
-              </LinkHover>
-            </motion.li>
-            <motion.li
-              variants={variants}
-              initial="hidden"
-              animate={isOpen ? 'show' : ''}
-              transition={{ duration: 0.2, delay: 0.06, ease: 'easeInOut' }}
+                <LinkHover
+                  onClick={() => {
+                    onClickHandler(aboutMeRef)
+                  }}
+                >
+                  About Me
+                </LinkHover>
+              </motion.li>
+              <motion.li
+                variants={variants}
+                initial="hidden"
+                animate={isOpen ? 'show' : ''}
+                transition={{ duration: 0.2, delay: 0.06, ease: 'easeInOut' }}
+              >
+                <LinkHover
+                  onClick={() => {
+                    onClickHandler(projectsRef)
+                  }}
+                >
+                  Projects
+                </LinkHover>
+              </motion.li>
+              <motion.li
+                variants={variants}
+                initial="hidden"
+                animate={isOpen ? 'show' : ''}
+                transition={{ duration: 0.2, delay: 0.09, ease: 'easeInOut' }}
+              >
+                <LinkHover
+                  onClick={() => {
+                    onClickHandler(contactMeRef)
+                  }}
+                >
+                  Contact Me
+                </LinkHover>
+              </motion.li>
+            </>
+          )}
+          <motion.li
+            variants={variants}
+            initial="hidden"
+            animate={isOpen ? 'show' : ''}
+            transition={{ duration: 0.2, delay: 0.09, ease: 'easeInOut' }}
+            className={classes['social-icons']}
+          >
+            <a
+              href="https://www.linkedin.com/in/igor-glisovic/"
+              target="_blank"
+              aria-label="linkedin"
             >
-              <LinkHover
-                onClick={() => {
-                  onClickHandler(projectsRef)
-                }}
-              >
-                Projects
-              </LinkHover>
-            </motion.li>
-            <motion.li
-              variants={variants}
-              initial="hidden"
-              animate={isOpen ? 'show' : ''}
-              transition={{ duration: 0.2, delay: 0.09, ease: 'easeInOut' }}
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a
+              href="https://github.com/igorglisovic"
+              target="_blank"
+              aria-label="github"
             >
-              <LinkHover
-                onClick={() => {
-                  onClickHandler(contactMeRef)
-                }}
-              >
-                Contact Me
-              </LinkHover>
-            </motion.li>
-          </>
-        )}
-        <motion.li
-          variants={variants}
-          initial="hidden"
-          animate={isOpen ? 'show' : ''}
-          transition={{ duration: 0.2, delay: 0.09, ease: 'easeInOut' }}
-          className={classes['social-icons']}
-        >
-          <a
-            href="https://www.linkedin.com/in/igor-glisovic/"
-            target="_blank"
-            aria-label="linkedin"
-          >
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-          <a
-            href="https://github.com/igorglisovic"
-            target="_blank"
-            aria-label="github"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            href="https://www.youtube.com/@splajs"
-            target="_blank"
-            aria-label="youtube"
-          >
-            <FontAwesomeIcon icon={faYoutube} />
-          </a>
-        </motion.li>
-      </ul>
-<<<<<<< HEAD
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a
+              href="https://www.youtube.com/@splajs"
+              target="_blank"
+              aria-label="youtube"
+            >
+              <FontAwesomeIcon icon={faYoutube} />
+            </a>
+          </motion.li>
+        </ul>
+      </div>
     </nav>
-=======
-    </div>
->>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
   )
 }
 

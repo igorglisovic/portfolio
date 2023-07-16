@@ -66,15 +66,7 @@ const projectsData = [
     title: 'MovieMatch',
     skills: ['HTML', 'CSS', 'Javascript', 'Apis', 'Rest', 'Git'],
     description: [
-      'MovieMatch is an application that allows users to find the right movie for them to watch. The application contains a search engine for movies and actors. On the home page, upcoming movies and popular movies are highlighted. The user can view the trailer of each movie as well as information about the actors and crew of the movie.'],
-
-const projectsData = [
-  {
-    id: 'igor-movie',
-    title: 'Igor Movie',
-    skills: ['HTML', 'CSS', 'Javascript', 'Apis', 'Rest', 'Git'],
-    description: [
-      'Igor movie is an application that allows users to find the right movie for them to watch. The application contains a search engine for movies and actors. On the home page, upcoming movies and popular movies are highlighted. The user can view the trailer of each movie as well as information about the actors and crew of the movie.',
+      'MovieMatch is an application that allows users to find the right movie for them to watch. The application contains a search engine for movies and actors. On the home page, upcoming movies and popular movies are highlighted. The user can view the trailer of each movie as well as information about the actors and crew of the movie.',
     ],
     link: 'https://igorglisovic.github.io/MoviesApp/',
     github:
@@ -87,12 +79,7 @@ const projectsData = [
     title: 'SocialSphere',
     skills: ['HTML', 'CSS', 'Javascript', 'Mockapi', 'Rest', 'Git'],
     description: [
-      'When you enter the SocialSphere Social Network for the first time, you need to register. Each subsequent time you will be able to log in with that account. After you create a SocialSphere account, you can publish a post or leave a comment on a post. You can also change your account information such as email and username.'],
-    id: 'social-network',
-    title: 'Social Network',
-    skills: ['HTML', 'CSS', 'Javascript', 'Mockapi', 'Rest', 'Git'],
-    description: [
-      'When you enter the Hexa Social Network for the first time, you need to register. Each subsequent time you will be able to log in with that account. After you create a hexa account, you can publish a post or leave a comment on a post. You can also change your account information such as email and username.',
+      'When you enter the SocialSphere Social Network for the first time, you need to register. Each subsequent time you will be able to log in with that account. After you create a SocialSphere account, you can publish a post or leave a comment on a post. You can also change your account information such as email and username.',
       ,
       'It is built in OOP Javascript and uses mockapi.io as a database where all posts, users, and comments of the social network are located.',
     ],
