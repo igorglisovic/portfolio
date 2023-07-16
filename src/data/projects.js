@@ -33,7 +33,6 @@ import portfolioAvif from '../assets/portfolio.avif'
 import portfolioSlider1 from '../assets/portfolio-slider1.jpg'
 import portfolioSlider2 from '../assets/portfolio-slider2.jpg'
 import portfolioSlider3 from '../assets/portfolio-slider3.jpg'
-<<<<<<< HEAD
 // Dashboard images
 import dashboardJpg from '../assets/dashboard.jpg'
 import dashboardAvif from '../assets/dashboard.avif'
@@ -67,8 +66,7 @@ const projectsData = [
     title: 'MovieMatch',
     skills: ['HTML', 'CSS', 'Javascript', 'Apis', 'Rest', 'Git'],
     description: [
-      'MovieMatch is an application that allows users to find the right movie for them to watch. The application contains a search engine for movies and actors. On the home page, upcoming movies and popular movies are highlighted. The user can view the trailer of each movie as well as information about the actors and crew of the movie.',
-=======
+      'MovieMatch is an application that allows users to find the right movie for them to watch. The application contains a search engine for movies and actors. On the home page, upcoming movies and popular movies are highlighted. The user can view the trailer of each movie as well as information about the actors and crew of the movie.'],
 
 const projectsData = [
   {
@@ -77,7 +75,6 @@ const projectsData = [
     skills: ['HTML', 'CSS', 'Javascript', 'Apis', 'Rest', 'Git'],
     description: [
       'Igor movie is an application that allows users to find the right movie for them to watch. The application contains a search engine for movies and actors. On the home page, upcoming movies and popular movies are highlighted. The user can view the trailer of each movie as well as information about the actors and crew of the movie.',
->>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
     ],
     link: 'https://igorglisovic.github.io/MoviesApp/',
     github:
@@ -86,19 +83,16 @@ const projectsData = [
     imgSlider: [moviesSlider1, moviesSlider2, moviesSlider3, moviesSlider4],
   },
   {
-<<<<<<< HEAD
     id: 'social-sphere',
     title: 'SocialSphere',
     skills: ['HTML', 'CSS', 'Javascript', 'Mockapi', 'Rest', 'Git'],
     description: [
-      'When you enter the SocialSphere Social Network for the first time, you need to register. Each subsequent time you will be able to log in with that account. After you create a SocialSphere account, you can publish a post or leave a comment on a post. You can also change your account information such as email and username.',
-=======
+      'When you enter the SocialSphere Social Network for the first time, you need to register. Each subsequent time you will be able to log in with that account. After you create a SocialSphere account, you can publish a post or leave a comment on a post. You can also change your account information such as email and username.'],
     id: 'social-network',
     title: 'Social Network',
     skills: ['HTML', 'CSS', 'Javascript', 'Mockapi', 'Rest', 'Git'],
     description: [
       'When you enter the Hexa Social Network for the first time, you need to register. Each subsequent time you will be able to log in with that account. After you create a hexa account, you can publish a post or leave a comment on a post. You can also change your account information such as email and username.',
->>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
       ,
       'It is built in OOP Javascript and uses mockapi.io as a database where all posts, users, and comments of the social network are located.',
     ],
@@ -108,10 +102,7 @@ const projectsData = [
     img: { avif: hexaAvif, webp: hexaWebp, jpg: hexaJpg },
     imgSlider: [HexaSlider1, HexaSlider2, HexaSlider3, HexaSlider4],
   },
-<<<<<<< HEAD
 
-=======
->>>>>>> fbb1d5389ff9e2baa5e9adf87a7ffc01d7c375ff
   {
     id: 'portfolio',
     title: 'My Portfolio',
