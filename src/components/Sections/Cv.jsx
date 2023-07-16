@@ -1,13 +1,10 @@
 import Container from '../UI/Container'
 import classes from './Cv.module.css'
 
-// import personalImageWebp from '../../assets/igorglisovicCv.webp'
+import personalImageWebp from '../../assets/igorglisovicCv.webp'
 import personalImagePng from '../../assets/igorglisovicCv.png'
-// import personalImageAvif from '../../assets/igorglisovicCv.avif'
-
-import personalImageWebp from '../../assets/igorglisovic.webp'
+import personalImageAvif from '../../assets/igorglisovicCv.avif'
 import personalImageJpg from '../../assets/igorglisovic.jpg'
-import personalImageAvif from '../../assets/igorglisovic.avif'
 
 import birthIcon from '../../assets/birth-icon.png'
 import emailIcon from '../../assets/email-icon.png'
@@ -46,7 +43,6 @@ const Cv = () => {
                   width={330}
                   height={330}
                   src={personalImagePng}
-                  src={personalImageJpg}
                 />
               </picture>
             </div>
@@ -67,10 +63,7 @@ const Cv = () => {
               <div className={classes['sidebar-row']}>
                 <div className={classes['sidebar-title']}>
                   <img src={emailIcon} alt="Email icon" />
-
                   <span>E-mail address:</span>
-
-                  <span>E-mail adress:</span>
                 </div>
                 <h4>contact@igorglisovic.com</h4>
               </div>
@@ -210,9 +203,8 @@ const Cv = () => {
                     development and working with RESTful APIs.
                   </p>
                 </div>
-
-                <h4>About me</h4>
               </div>
+              {/* <h4>About me</h4>
               <div className={classes['main-content']}>
                 <p className={classes['about-text']}>
                   Enthusiastic, responsible, and hard-working IT person. Working
@@ -223,7 +215,7 @@ const Cv = () => {
                   facilitating the empowerment and vocalization of marginalized
                   communities.
                 </p>
-              </div>
+              </div> */}
             </div>
             <div className={classes['main-section']}>
               <div className={classes['main-title']}>
@@ -260,24 +252,6 @@ const Cv = () => {
                       Library;
                     </li>
                     <li>• Good experience and skills with ChatGPT;</li>
-                    <li>JavaScript, Node.js;</li>
-                    <li>
-                      • Advanced coding skills and experience in HTML, CSS,
-                      SASS, Bootstrap;
-                    </li>
-                    <li>
-                      • Advanced skills and experience in Wordpress, WebFlow;
-                    </li>
-                    <li>
-                      • Good programming skills and experience in React.js;
-                    </li>
-                    <li>
-                      • Good programming skills and experience in C/C++ and C#;
-                    </li>
-                    <li>
-                      • Good experience and skills with APIs (Http requests);
-                    </li>
-                    <li>• Good experience and skills with Git;</li>
                   </ul>
                 </div>
                 <div className={classes['main-row']}>
@@ -356,14 +330,6 @@ const Cv = () => {
                       • I have a knack for identifying challenges and coming up
                       with effective solutions.
                     </li>
-
-                    <li>• Team player</li>
-                    <li>• Motivated</li>
-                    <li>• Always curious</li>
-                    <li>• Responsible</li>
-                    <li>• A problem solver</li>
-                    <li>• Very organised</li>
-                    <li>• Honest</li>
                   </ul>
                 </div>
                 <div className={classes['main-row']}>
@@ -373,8 +339,6 @@ const Cv = () => {
                   </div>
                   <ul>
                     <li>• Driving license: B, M, AM (EU Directive 2020)</li>
-
-                    <li>• Driving licence: B, M, AM (EU Directive 2020)</li>
                   </ul>
                 </div>
               </div>
@@ -419,8 +383,6 @@ const Cv = () => {
                     <span>Sep 2018 - June 2022</span>
                   </div>
                   <div>
-                    <h5>Technical High School - Information Technology</h5>
-
                     <h5>Technical High School - Information Tehnology</h5>
 
                     <div className={classes['main-row__subtitle']}>
@@ -437,8 +399,6 @@ const Cv = () => {
             </div>
 
             <span className={classes.edit}>Last edit: February 2023.</span>
-
-            <span className={classes.edit}>Last edit: October 2022.</span>
           </main>
         </div>
       </Container>
