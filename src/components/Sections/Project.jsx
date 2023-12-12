@@ -9,13 +9,23 @@ import {
   scrollAttributes,
   scrollAttributesV2,
 } from '../../data/scrollAtributes'
+import Card from '../UI/Card'
+import { useEffect } from 'react'
+import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
 const Project = ({ projectId }) => {
+  const { scroll } = useLocomotiveScroll()
+
   const data = projectsData.find(project => project.id === projectId)
 
-  const moreProjectsData = projectsData.filter(
-    project => project.id !== projectId
-  )
+  const moreProjectsData = projectsData
+    .filter(project => project.id !== projectId)
+    .slice(3)
+
+  useEffect(() => {
+    // Scroll to the top of the page on the initial render
+    if (scroll) scroll.scrollTo(0, 0)
+  }, [scroll])
 
   return (
     <>
@@ -25,7 +35,15 @@ const Project = ({ projectId }) => {
             <div className="slide-container">
               <Zoom scale={0.1}>
                 {data.imgSlider.map((each, index) => (
-                  <img key={index} style={{ width: '100%' }} src={each} />
+                  <img
+                    onClick={() => {
+                      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+                      console.log('first')
+                    }}
+                    key={index}
+                    style={{ width: '100%' }}
+                    src={each}
+                  />
                 ))}
               </Zoom>
             </div>
@@ -37,18 +55,20 @@ const Project = ({ projectId }) => {
                 </p>
               ))}
             </div>
-            <div className={classes.skills}>
-              <h3 {...scrollAttributes}>Source Code</h3>
-              <a
-                {...scrollAttributes}
-                aria-label="github repository"
-                className={classes.github}
-                href={data.github}
-                target="_blank"
-              >
-                <LinkHover>{data.github}</LinkHover>
-              </a>
-            </div>
+            {data.github && (
+              <div className={classes.skills}>
+                <h3 {...scrollAttributes}>Source Code</h3>
+                <a
+                  {...scrollAttributes}
+                  aria-label="github repository"
+                  className={classes.github}
+                  href={data.github}
+                  target="_blank"
+                >
+                  <LinkHover>{data.github}</LinkHover>
+                </a>
+              </div>
+            )}
             <div className={classes.skills}>
               <h3 {...scrollAttributes}>Technologies I used</h3>
               <ul {...scrollAttributes} className={classes['skills__list']}>
@@ -73,7 +93,7 @@ const Project = ({ projectId }) => {
           <div className={classes['more-projects__wrapper']}>
             <h2 {...scrollAttributesV2}>More Projects</h2>
             <div className={classes['more-projects__items']}>
-              {/* {moreProjectsData.map(project => (
+              {moreProjectsData.map(project => (
                 <Card
                   key={project.id}
                   id={project.id}
@@ -85,7 +105,7 @@ const Project = ({ projectId }) => {
                 >
                   {project.title}
                 </Card>
-              ))} */}
+              ))}
             </div>
             <Link
               {...scrollAttributes}

@@ -62,9 +62,44 @@ const projectsData = [
     ],
   },
   {
+    id: 'mobilne-dizalice',
+    title: 'MobilneDizalice',
+    skills: ['React', 'CSS Modules', 'Swiper'],
+    description: [
+      'TaskMaster is, as the name suggests, a simulation of a real admin panel. It contains functions such as an overview of employees, a calendar for the purpose of reminders, kanban and many other cool things.',
+      'It also has options to change themes and change from dark to light mode. The settings are remembered so that every time the user returns to the application, he can enjoy the design he chose.',
+    ],
+    link: 'https://mobilnedizalice.com/',
+    github: 'https://github.com/igorglisovic/mobilnedizalice',
+    img: { avif: dashboardAvif, webp: dashboardWebp, jpg: dashboardJpg },
+    imgSlider: [
+      dashboardSlider1,
+      dashboardSlider2,
+      dashboardSlider3,
+      dashboardSlider4,
+    ],
+  },
+  {
+    id: 'ciscenje-dd',
+    title: 'Ciscenje D&D',
+    skills: ['WordPress', 'Elementor'],
+    description: [
+      'TaskMaster is, as the name suggests, a simulation of a real admin panel. It contains functions such as an overview of employees, a calendar for the purpose of reminders, kanban and many other cool things.',
+      'It also has options to change themes and change from dark to light mode. The settings are remembered so that every time the user returns to the application, he can enjoy the design he chose.',
+    ],
+    link: 'https://www.ciscenjedd.rs/',
+    img: { avif: dashboardAvif, webp: dashboardWebp, jpg: dashboardJpg },
+    imgSlider: [
+      dashboardSlider1,
+      dashboardSlider2,
+      dashboardSlider3,
+      dashboardSlider4,
+    ],
+  },
+  {
     id: 'movie-match',
     title: 'MovieMatch',
-    skills: ['HTML', 'CSS', 'Javascript', 'Apis', 'Rest', 'Git'],
+    skills: ['HTML', 'CSS', 'Javascript', 'APIs', 'Rest', 'Git'],
     description: [
       'MovieMatch is an application that allows users to find the right movie for them to watch. The application contains a search engine for movies and actors. On the home page, upcoming movies and popular movies are highlighted. The user can view the trailer of each movie as well as information about the actors and crew of the movie.',
     ],
@@ -127,7 +162,7 @@ const projectsData = [
   {
     id: 'recipe-app',
     title: 'Recipe app',
-    skills: ['HTML', 'Sass', 'Javascript', 'Apis', 'Rest', 'Git'],
+    skills: ['HTML', 'Sass', 'Javascript', 'APIs', 'Rest', 'Git'],
     description: [
       'RecipeApp is a fictitious and minimalistic application where the user can explore new recipes and save favorite ones. By clicking on his favorite meals, he can see all the details about their preparation.',
     ],
