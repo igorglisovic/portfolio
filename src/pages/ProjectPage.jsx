@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { useLocation, useParams } from 'react-router-dom'
 import {
@@ -11,12 +11,10 @@ import Loader from '../components/Overlays/Loader'
 import Project from '../components/Sections/Project'
 
 const ProjectPage = () => {
-  const { scroll, isReady } = useLocomotiveScroll()
   const containerRef = useRef(null)
   const params = useParams()
 
   const location = useLocation()
-  console.log(location.pathname)
 
   return (
     <LocomotiveScrollProvider
@@ -26,6 +24,7 @@ const ProjectPage = () => {
       }}
       watch={[location]}
       containerRef={containerRef}
+      key={Math.random()}
     >
       <main className="project" data-scroll-container ref={containerRef}>
         {createPortal(<Loader />, document.getElementById('overlays'))}
