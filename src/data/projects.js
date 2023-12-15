@@ -45,6 +45,10 @@ import dashboardSlider4 from '../assets/dashboard-slider4.jpg'
 import ddJpg from '../assets/dd.jpg'
 import ddAvif from '../assets/dd.avif'
 import ddWebp from '../assets/dd.webp'
+// MobilneDizalice images
+import mobilnedizaliceJpg from '../assets/mobilnedizalice.jpg'
+import mobilnedizaliceAvif from '../assets/mobilnedizalice.avif'
+import mobilnedizaliceWebp from '../assets/mobilnedizalice.webp'
 
 const projectsData = [
   {
@@ -75,7 +79,11 @@ const projectsData = [
     ],
     link: 'https://mobilnedizalice.com/',
     github: 'https://github.com/igorglisovic/mobilnedizalice',
-    img: { avif: dashboardAvif, webp: dashboardWebp, jpg: dashboardJpg },
+    img: {
+      avif: mobilnedizaliceAvif,
+      webp: mobilnedizaliceWebp,
+      jpg: mobilnedizaliceJpg,
+    },
     imgSlider: [
       dashboardSlider1,
       dashboardSlider2,
