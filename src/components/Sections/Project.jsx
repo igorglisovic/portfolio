@@ -20,7 +20,8 @@ const Project = ({ projectId }) => {
 
   const moreProjectsData = projectsData
     .filter(project => project.id !== projectId)
-    .slice(3)
+    .slice(0, 4)
+  console.log(moreProjectsData)
 
   useEffect(() => {
     // Scroll to the top of the page on the initial render
