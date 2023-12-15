@@ -41,6 +41,10 @@ import dashboardSlider1 from '../assets/dashboard-slider1.jpg'
 import dashboardSlider2 from '../assets/dashboard-slider2.jpg'
 import dashboardSlider3 from '../assets/dashboard-slider3.jpg'
 import dashboardSlider4 from '../assets/dashboard-slider4.jpg'
+// Ciscenje D&D images
+import ddJpg from '../assets/dd.jpg'
+import ddAvif from '../assets/dd.avif'
+import ddWebp from '../assets/dd.webp'
 
 const projectsData = [
   {
@@ -88,7 +92,7 @@ const projectsData = [
       'It also has options to change themes and change from dark to light mode. The settings are remembered so that every time the user returns to the application, he can enjoy the design he chose.',
     ],
     link: 'https://www.ciscenjedd.rs/',
-    img: { avif: dashboardAvif, webp: dashboardWebp, jpg: dashboardJpg },
+    img: { avif: ddAvif, webp: ddWebp, jpg: ddJpg },
     imgSlider: [
       dashboardSlider1,
       dashboardSlider2,
