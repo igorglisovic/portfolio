@@ -9,7 +9,7 @@
 .projects-wrapper {
   padding: clamp(1rem, 5vw, 4rem);
   background-color: #fff;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .projects-wrapper h2 {
