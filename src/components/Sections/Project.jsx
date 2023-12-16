@@ -10,23 +10,43 @@ import {
   scrollAttributesV2,
 } from '../../data/scrollAtributes'
 import Card from '../UI/Card'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
 const Project = ({ projectId }) => {
+  const [mediaMatches, setMediaMatches] = useState(false)
+  const [media, setMedia] = useState(false)
+
   const { scroll } = useLocomotiveScroll()
 
   const data = projectsData.find(project => project.id === projectId)
 
   const moreProjectsData = projectsData
     .filter(project => project.id !== projectId)
-    .slice(0, 4)
+    .slice(0, mediaMatches ? 3 : 4)
   console.log(moreProjectsData)
 
   useEffect(() => {
     // Scroll to the top of the page on the initial render
     if (scroll) scroll.scrollTo(0, 0)
   }, [scroll])
+
+  const getMediaMatches = () => {
+    if (media.matches) {
+      setMediaMatches(true)
+    } else {
+      setMediaMatches(false)
+    }
+  }
+
+  useEffect(() => {
+    setMedia(window.matchMedia('(max-width: 1100px)'))
+  }, [])
+
+  useEffect(() => {
+    getMediaMatches()
+    window.addEventListener('resize', getMediaMatches)
+  }, [media])
 
   return (
     <>
