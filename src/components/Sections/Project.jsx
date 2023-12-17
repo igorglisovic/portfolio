@@ -60,7 +60,9 @@ const Project = ({ projectId }) => {
                       window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
                     }}
                     key={index}
-                    style={{ width: '100%' }}
+                    style={{
+                      width: '100%',
+                    }}
                     src={each}
                   />
                 ))}

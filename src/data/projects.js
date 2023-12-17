@@ -45,6 +45,11 @@ import dashboardSlider4 from '../assets/dashboard-slider4.jpg'
 import ddJpg from '../assets/dd.jpg'
 import ddAvif from '../assets/dd.avif'
 import ddWebp from '../assets/dd.webp'
+import ddSlider1 from '../assets/dd-slider1.jpg'
+import ddSlider2 from '../assets/dd-slider2.jpg'
+import ddSlider3 from '../assets/dd-slider3.jpg'
+import ddSlider4 from '../assets/dd-slider4.jpg'
+import ddSlider5 from '../assets/dd-slider5.jpg'
 // MobilneDizalice images
 import mobilnedizaliceJpg from '../assets/mobilnedizalice.jpg'
 import mobilnedizaliceAvif from '../assets/mobilnedizalice.avif'
@@ -107,12 +112,7 @@ const projectsData = [
     ],
     link: 'https://www.ciscenjedd.rs/',
     img: { avif: ddAvif, webp: ddWebp, jpg: ddJpg },
-    imgSlider: [
-      dashboardSlider1,
-      dashboardSlider2,
-      dashboardSlider3,
-      dashboardSlider4,
-    ],
+    imgSlider: [ddSlider1, ddSlider2, ddSlider3, ddSlider4, ddSlider5],
   },
   {
     id: 'movie-match',
