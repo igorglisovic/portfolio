@@ -24,7 +24,6 @@ const Project = ({ projectId }) => {
   const moreProjectsData = projectsData
     .filter(project => project.id !== projectId)
     .slice(0, mediaMatches ? 3 : 4)
-  console.log(moreProjectsData)
 
   useEffect(() => {
     // Scroll to the top of the page on the initial render
@@ -59,7 +58,6 @@ const Project = ({ projectId }) => {
                   <img
                     onClick={() => {
                       window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
-                      console.log('first')
                     }}
                     key={index}
                     style={{ width: '100%' }}
