@@ -12,7 +12,7 @@ footer {
 .bottom-footer {
   padding: 20px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   border-top: 2px solid #fff;
   font-weight: 500;
   margin-top: 20px;

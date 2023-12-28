@@ -46,8 +46,8 @@ const Footer = () => {
           data-scroll
           data-scroll-class="loading-active"
         >
-          <span>&copy; Igor Glisovic {currentYear}</span>
-          <span>Made with React JS</span>
+          <span>Developed by &copy;Igor Glisovic</span>
+          {/* <span>Made with React JS</span> */}
         </div>
       </Container>
     </footer>

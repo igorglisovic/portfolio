@@ -59,6 +59,7 @@ import mobilneSlider2 from '../assets/mobilne-slider2.jpg'
 import mobilneSlider3 from '../assets/mobilne-slider3.jpg'
 import mobilneSlider4 from '../assets/mobilne-slider4.jpg'
 import mobilneSlider5 from '../assets/mobilne-slider5.jpg'
+import mobilneSlider6 from '../assets/mobilne-slider6.jpg'
 
 const projectsData = [
   {
@@ -99,6 +100,7 @@ const projectsData = [
       mobilneSlider2,
       mobilneSlider3,
       mobilneSlider4,
+      mobilneSlider6,
       mobilneSlider5,
     ],
   },
@@ -159,37 +161,37 @@ const projectsData = [
     img: { avif: portfolioAvif, webp: portfolioWebp, jpg: portfolioJpg },
     imgSlider: [portfolioSlider1, portfolioSlider2, portfolioSlider3],
   },
-  {
-    id: 'bankist-app',
-    title: 'Bankist App',
-    skills: ['HTML', 'CSS', 'Javascript', 'Git'],
-    description: [
-      'Bankist is a fictitious and minimalistic online banking application that allows the user to:',
-      '- Log in with a username and password',
-      '- View and sort their monetary movements',
-      '- Transfer money to another account',
-      '- Request a loan from the bank',
-      '- Delete their account',
-    ],
-    link: 'https://igorglisovic.github.io/BankistApp/',
-    github:
-      'https://github.com/igorglisovic/igorglisovic.github.io/tree/master/BankistApp',
-    img: { avif: bankistAvif, webp: bankistWebp, jpg: bankistJpg },
-    imgSlider: [bankistSlider1, bankistSlider2],
-  },
-  {
-    id: 'recipe-app',
-    title: 'Recipe app',
-    skills: ['HTML', 'Sass', 'Javascript', 'APIs', 'Rest', 'Git'],
-    description: [
-      'RecipeApp is a fictitious and minimalistic application where the user can explore new recipes and save favorite ones. By clicking on his favorite meals, he can see all the details about their preparation.',
-    ],
-    link: 'https://igorglisovic.github.io/RecipeApp/',
-    github:
-      'https://github.com/igorglisovic/igorglisovic.github.io/tree/master/RecipeApp',
-    img: { avif: recipeAvif, webp: recipeWebp, jpg: recipeJpg },
-    imgSlider: [recipeSlider1, recipeSlider2],
-  },
+  // {
+  //   id: 'bankist-app',
+  //   title: 'Bankist App',
+  //   skills: ['HTML', 'CSS', 'Javascript', 'Git'],
+  //   description: [
+  //     'Bankist is a fictitious and minimalistic online banking application that allows the user to:',
+  //     '- Log in with a username and password',
+  //     '- View and sort their monetary movements',
+  //     '- Transfer money to another account',
+  //     '- Request a loan from the bank',
+  //     '- Delete their account',
+  //   ],
+  //   link: 'https://igorglisovic.github.io/BankistApp/',
+  //   github:
+  //     'https://github.com/igorglisovic/igorglisovic.github.io/tree/master/BankistApp',
+  //   img: { avif: bankistAvif, webp: bankistWebp, jpg: bankistJpg },
+  //   imgSlider: [bankistSlider1, bankistSlider2],
+  // },
+  // {
+  //   id: 'recipe-app',
+  //   title: 'Recipe app',
+  //   skills: ['HTML', 'Sass', 'Javascript', 'APIs', 'Rest', 'Git'],
+  //   description: [
+  //     'RecipeApp is a fictitious and minimalistic application where the user can explore new recipes and save favorite ones. By clicking on his favorite meals, he can see all the details about their preparation.',
+  //   ],
+  //   link: 'https://igorglisovic.github.io/RecipeApp/',
+  //   github:
+  //     'https://github.com/igorglisovic/igorglisovic.github.io/tree/master/RecipeApp',
+  //   img: { avif: recipeAvif, webp: recipeWebp, jpg: recipeJpg },
+  //   imgSlider: [recipeSlider1, recipeSlider2],
+  // },
 ]
 
 const featuredProjectsData = [
