@@ -87,9 +87,9 @@ const Cv = () => {
                     className={classes.code}
                     alt="Code icon"
                   />
-                  <span>Javascript</span>
+                  <span>Next.js</span>
                 </div>
-                <h4>3+ Years</h4>
+                <h4>6+ Months</h4>
               </div>
               <div className={classes['sidebar-row']}>
                 <div className={classes['sidebar-title']}>
@@ -98,9 +98,20 @@ const Cv = () => {
                     className={classes.code}
                     alt="Code icon"
                   />
-                  <span>React JS</span>
+                  <span>React.js</span>
                 </div>
-                <h4>1+ Year</h4>
+                <h4>1+ Years</h4>
+              </div>
+              <div className={classes['sidebar-row']}>
+                <div className={classes['sidebar-title']}>
+                  <img
+                    src={codeIcon}
+                    className={classes.code}
+                    alt="Code icon"
+                  />
+                  <span>JavaScript</span>
+                </div>
+                <h4>2+ Year</h4>
               </div>
               <div className={classes[classes['sidebar-row']]}>
                 <div className={classes['sidebar-title']}>
@@ -111,7 +122,7 @@ const Cv = () => {
                   />
                   <span>HTML/CSS</span>
                 </div>
-                <h4>4+ Years</h4>
+                <h4>3+ Years</h4>
               </div>
 
               <div className={classes[classes['sidebar-row']]}>
@@ -121,7 +132,7 @@ const Cv = () => {
                     className={classes.code}
                     alt="Code icon"
                   />
-                  <span>Wordpress</span>
+                  <span>WordPress</span>
                 </div>
                 <h4>3+ Years</h4>
               </div>
@@ -139,6 +150,26 @@ const Cv = () => {
           </aside>
           <main className={classes['cv-main']}>
             <div className={classes['main-section']}>
+              {/* <div className={classes['main-title']}>
+                <img
+                  src={aboutIcon}
+                  className={classes.about}
+                  alt="Contact icon"
+                />
+
+                <h4>About me</h4>
+              </div>
+              <div className={classes['main-content']}>
+                <p className={classes['about-text']}>
+                  Enthusiastic, responsible, and hard-working IT person. Working
+                  on different projects helped me adapt to the changes quickly
+                  and made me a mature team worker. Ability to think through a
+                  problem coupled with the confidence to make ideas heard.
+                  Excited to pursue new companies to grow my skills while
+                  facilitating the empowerment and vocalization of marginalized
+                  communities.
+                </p>
+              </div> */}
               <div className={classes['main-title']}>
                 <img
                   src={aboutIcon}
@@ -146,11 +177,15 @@ const Cv = () => {
                   alt="Contact icon"
                 />
 
-                <h4>Projects</h4>
+                <h4>Personal Projects</h4>
               </div>
               <div className={classes['main-content']}>
                 <div className={classes.project}>
-                  <h4>TaskMaster</h4>
+                  <h4>
+                    <a target="blank" href="/project:task-master">
+                      TaskMaster
+                    </a>
+                  </h4>
                   <p>
                     Using React, Tailwind, Syncfusion, and Context API, I
                     created an admin dashboard application. This project allowed
@@ -172,7 +207,11 @@ const Cv = () => {
                   </p>
                 </div>
                 <div className={classes.project}>
-                  <h4>MovieMatch</h4>
+                  <h4>
+                    <a target="blank" href="/project:movie-match">
+                      MovieMatch
+                    </a>
+                  </h4>
                   <p>
                     Developed a user-friendly web application using HTML, CSS,
                     and JavaScript to allow users to easily search and find
@@ -186,7 +225,11 @@ const Cv = () => {
                   </p>
                 </div>
                 <div className={classes.project}>
-                  <h4>SocialSphere</h4>
+                  <h4>
+                    <a target="blank" href="/project:social-sphere">
+                      SocialSphere
+                    </a>
+                  </h4>
                   <p>
                     SocialSphere is a social media web application that I
                     developed using HTML, CSS, and JavaScript. The app allows
@@ -204,18 +247,6 @@ const Cv = () => {
                   </p>
                 </div>
               </div>
-              {/* <h4>About me</h4>
-              <div className={classes['main-content']}>
-                <p className={classes['about-text']}>
-                  Enthusiastic, responsible, and hard-working IT person. Working
-                  on different projects helped me adapt to the changes quickly
-                  and made me a mature team worker. Ability to think through a
-                  problem coupled with the confidence to make ideas heard.
-                  Excited to pursue new companies to grow my skills while
-                  facilitating the empowerment and vocalization of marginalized
-                  communities.
-                </p>
-              </div> */}
             </div>
             <div className={classes['main-section']}>
               <div className={classes['main-title']}>
@@ -238,23 +269,29 @@ const Cv = () => {
                       JavaScript;
                     </li>
                     <li>
-                      • Advanced coding skills and experience in HTML, CSS,
-                      SASS, and Tailwind;
+                      • Advanced coding skills and experience in HTML, CSS, and
+                      Tailwind;
                     </li>
                     <li>
                       • Good programming skills and experience in React.js,
-                      Redux;
+                      Next.js, and Redux;;
                     </li>
-                    <li>• Good experience and skills with APIs;</li>
-                    <li>• Good experience and skills with Git, GitHub;</li>
+                    <li>
+                      • Good experience and skills with Git, GitHub, APIs, and
+                      SASS;
+                    </li>
                     <li>
                       • Good experience and skills with Jest and React Testing
                       Library;
                     </li>
                     <li>• Good experience and skills with ChatGPT;</li>
+                    <li>
+                      • Good Raster and Vector graphics skills (Adobe Photoshop,
+                      Figma);
+                    </li>
                   </ul>
                 </div>
-                <div className={classes['main-row']}>
+                {/* <div className={classes['main-row']}>
                   <div className={classes['main-row__title']}>
                     <img
                       src={computerIcon}
@@ -283,7 +320,7 @@ const Cv = () => {
                       replacement – soldering techniques)
                     </li>
                   </ul>
-                </div>
+                </div> */}
                 <div className={classes['main-row']}>
                   <div className={classes['main-row__title']}>
                     <img
@@ -295,10 +332,7 @@ const Cv = () => {
                   </div>
                   <ul>
                     <li>• Serbian (native)</li>
-                    <li>• English</li>
-
-                    <li>• Serbian native</li>
-                    <li>• English - B2 (learned during high school)</li>
+                    <li>• English (learned during high school)</li>
                   </ul>
                 </div>
                 <div className={classes['main-row']}>
@@ -338,7 +372,7 @@ const Cv = () => {
                     <span>Other</span>
                   </div>
                   <ul>
-                    <li>• Driving license: B, M, AM (EU Directive 2020)</li>
+                    <li>• Driving license: B, AM (EU Directive 2020)</li>
                   </ul>
                 </div>
               </div>
