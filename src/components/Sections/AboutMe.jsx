@@ -56,17 +56,17 @@ const AboutMe = React.forwardRef((_, ref) => {
               data-scroll-delay="0.04"
               className={classes['aboutme-skills__list']}
             >
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>TypeScript</li>
+              <li>TailwindCSS</li>
+              <li>Sass</li>
+              <li>MongoDB</li>
               <li>HTML</li>
               <li>CSS</li>
-              <li>Javascript</li>
-              <li>React</li>
-              <li>NextJS</li>
-              <li>Tailwind</li>
-              <li>Sass</li>
-              <li>Bootstrap</li>
-              <li>Wordpress</li>
               <li>Git</li>
-              <li>GitHub</li>
+              <li>WordPress</li>
               <li>Photoshop</li>
               <li>Figma</li>
             </ul>

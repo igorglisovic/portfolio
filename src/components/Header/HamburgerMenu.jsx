@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import HamburgerList from './HamburgerList.jsx'
@@ -9,6 +9,8 @@ const HamburgerMenu = ({ aboutMeRef, projectsRef, contactMeRef, heroRef }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const location = useLocation()
+
+  const ref = useRef()
 
   let options = {
     rootMargin: '0px',
@@ -53,7 +55,7 @@ const HamburgerMenu = ({ aboutMeRef, projectsRef, contactMeRef, heroRef }) => {
   }
 
   return (
-    <div className={classes.hamburger}>
+    <div ref={ref} className={classes.hamburger}>
       <motion.div
         variants={variants}
         initial="hidden"
@@ -66,6 +68,8 @@ const HamburgerMenu = ({ aboutMeRef, projectsRef, contactMeRef, heroRef }) => {
           projectsRef={projectsRef}
           contactMeRef={contactMeRef}
           heroRef={heroRef}
+          setIsOpen={setIsOpen}
+          buttonRef={ref}
         />
       </motion.div>
       <motion.button

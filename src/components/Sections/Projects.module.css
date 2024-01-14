@@ -58,6 +58,12 @@
   transition: opacity 2s;
 }
 
+.bg-line {
+  position: absolute;
+  top: 0%;
+  right: 17%;
+}
+
 @media only screen and (max-width: 600px) {
   .projects h2::before {
     width: 20px;

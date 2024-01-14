@@ -6,12 +6,6 @@ import HexaSlider1 from '../assets/hexa-slider1.jpg'
 import HexaSlider2 from '../assets/hexa-slider2.jpg'
 import HexaSlider3 from '../assets/hexa-slider3.jpg'
 import HexaSlider4 from '../assets/hexa-slider4.jpg'
-// Bankist images
-import bankistSlider1 from '../assets/bankist-slider1.jpg'
-import bankistSlider2 from '../assets/bankist-slider2.jpg'
-import bankistWebp from '../assets/bankist.webp'
-import bankistAvif from '../assets/bankist.avif'
-import bankistJpg from '../assets/bankist.jpg'
 // Movies images
 import moviesSlider1 from '../assets/movies-slider1.jpg'
 import moviesSlider2 from '../assets/movies-slider2.jpg'
@@ -20,12 +14,6 @@ import moviesSlider4 from '../assets/movies-slider4.jpg'
 import moviesWebp from '../assets/movies.webp'
 import moviesAvif from '../assets/movies.avif'
 import moviesJpg from '../assets/movies.jpg'
-// Recipe images
-import recipeJpg from '../assets/recipe.jpg'
-import recipeWebp from '../assets/recipe.webp'
-import recipeAvif from '../assets/recipe.avif'
-import recipeSlider1 from '../assets/recipe-slider1.jpg'
-import recipeSlider2 from '../assets/recipe-slider2.jpg'
 // Portfolio images
 import portfolioJpg from '../assets/portfolio.jpg'
 import portfolioWebp from '../assets/portfolio.webp'
@@ -62,6 +50,31 @@ import mobilneSlider5 from '../assets/mobilne-slider5.jpg'
 import mobilneSlider6 from '../assets/mobilne-slider6.jpg'
 
 const projectsData = [
+  {
+    id: 'cars',
+    title: 'Cars',
+    skills: [
+      'Next.js',
+      'Tailwind',
+      'MongoDB',
+      'Mongoose',
+      'Context API',
+      'Framer motion',
+      'Server Components',
+    ],
+    description: [
+      'TaskMaster is, as the name suggests, a simulation of a real admin panel. It contains functions such as an overview of employees, a calendar for the purpose of reminders, kanban and many other cool things.',
+      'It also has options to change themes and change from dark to light mode. The settings are remembered so that every time the user returns to the application, he can enjoy the design he chose.',
+    ],
+    link: 'https://igorglisovic.netlify.app/',
+    img: { avif: dashboardAvif, webp: dashboardWebp, jpg: dashboardJpg },
+    imgSlider: [
+      dashboardSlider1,
+      dashboardSlider2,
+      dashboardSlider3,
+      dashboardSlider4,
+    ],
+  },
   {
     id: 'task-master',
     title: 'TaskMaster',

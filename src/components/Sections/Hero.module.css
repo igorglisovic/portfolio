@@ -76,6 +76,13 @@
   margin-top: 27.6px;
 }
 
+.bg-line {
+  position: absolute;
+  left: 0;
+  transform: rotate(-10deg);
+  top: 12%;
+}
+
 @media only screen and (max-width: 1150px) {
   .hero-personal__image {
     margin-right: 80px;

@@ -45,6 +45,19 @@ const Projects = React.forwardRef((_, ref) => {
     >
       <Container>
         <div className={classes['project-wrapper']}>
+          <svg
+            width="207"
+            height="1100"
+            viewBox="0 0 207 1100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className={classes['bg-line']}
+          >
+            <path
+              d="M1 1C90.3285 53.6667 253.417 205.8 191.145 393C113.304 627 15.8551 744.5 206 1087"
+              stroke="#ffd300"
+            />
+          </svg>
           <div className={classes['title']}>
             <h2 {...scrollAttributes}>Projects</h2>
           </div>

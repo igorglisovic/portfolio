@@ -69,6 +69,13 @@ footer .personal__image::before {
   transition: opacity 2s;
 }
 
+.bg-line {
+  position: absolute;
+  right: -2%;
+  /* transform: rotate(-130deg); */
+  top: 0;
+}
+
 @media only screen and (max-width: 700px) {
   .main-footer {
     flex-direction: column;

@@ -27,19 +27,34 @@
   visibility: hidden;
 }
 
-.navigation .social-icons svg {
+.navigation .social-icons__desktop {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  visibility: initial;
+}
+
+.navigation .social-icons svg,
+.navigation .social-icons__desktop svg {
   --main-clr: #5555ff;
   color: var(--main-clr);
   width: auto;
+  transition: color 0.5s;
 }
 
-.navigation .social-icons svg:hover {
-  color: var(--secondary-clr);
+.navigation .social-icons svg:hover,
+.navigation .social-icons__desktop svg:hover {
+  color: var(--secondary-clr) !important;
 }
 
 @media only screen and (max-width: 900px) {
   .navigation .social-icons {
     display: flex;
     visibility: initial;
+  }
+
+  .navigation .social-icons__desktop {
+    display: none;
+    visibility: hidden;
   }
 }
