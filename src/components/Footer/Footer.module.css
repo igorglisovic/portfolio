@@ -12,10 +12,22 @@ footer {
 .bottom-footer {
   padding: 20px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   border-top: 2px solid #fff;
   font-weight: 500;
   margin-top: 20px;
+}
+
+.bottom-footer ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.bottom-footer ul a {
+  color: var(--main-clr);
+  font-size: 1.2rem;
 }
 
 .bottom-footer span {
@@ -26,7 +38,7 @@ footer {
 footer .personal__image {
   position: relative;
   width: clamp(150px, 20vw, 200px);
-  aspect-ratio: 1;
+  height: clamp(150px, 20vw, 200px);
   margin-right: 20px;
 }
 
@@ -42,7 +54,7 @@ footer .personal__image::before {
   top: 20px;
   left: 20px;
   width: clamp(150px, 20vw, 200px);
-  aspect-ratio: 1;
+  height: clamp(150px, 20vw, 200px);
   background-color: transparent;
   border: 2px solid #fff;
 }
@@ -71,9 +83,21 @@ footer .personal__image::before {
 
 .bg-line {
   position: absolute;
-  right: -2%;
-  /* transform: rotate(-130deg); */
+  right: -13%;
   top: 0;
+}
+
+@media only screen and (min-width: 1800px) {
+  .bg-line {
+    right: -19%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .bg-line {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -85,5 +109,13 @@ footer .personal__image::before {
 
   .bottom-footer {
     margin-top: 20px;
+  }
+
+  .bottom-footer ul {
+    gap: 1rem;
+  }
+
+  .bottom-footer ul a {
+    font-size: 1rem;
   }
 }

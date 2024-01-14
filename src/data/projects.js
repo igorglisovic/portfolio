@@ -55,13 +55,35 @@ const projectsData = [
     title: 'Cars',
     skills: [
       'Next.js',
-      'Tailwind',
+      'TailwindCSS',
       'MongoDB',
       'Mongoose',
       'Context API',
       'Framer motion',
       'Server Components',
     ],
+    description: [
+      'TaskMaster is, as the name suggests, a simulation of a real admin panel. It contains functions such as an overview of employees, a calendar for the purpose of reminders, kanban and many other cool things.',
+      'It also has options to change themes and change from dark to light mode. The settings are remembered so that every time the user returns to the application, he can enjoy the design he chose.',
+    ],
+    role: [
+      'Created whole UI/UX for Web application where users can buy, sell, and explore a diverse range of cars',
+      'Implemented Google and credentials login and register logic',
+      'Created the structure of the MongoDB database and connected it through the backend part of the application.',
+    ],
+    link: 'https://igorglisovic.netlify.app/',
+    img: { avif: dashboardAvif, webp: dashboardWebp, jpg: dashboardJpg },
+    imgSlider: [
+      dashboardSlider1,
+      dashboardSlider2,
+      dashboardSlider3,
+      dashboardSlider4,
+    ],
+  },
+  {
+    id: 'trim-creative',
+    title: 'TrimCreative',
+    skills: ['Next.js', 'TailwindCSS', 'Framer motion'],
     description: [
       'TaskMaster is, as the name suggests, a simulation of a real admin panel. It contains functions such as an overview of employees, a calendar for the purpose of reminders, kanban and many other cool things.',
       'It also has options to change themes and change from dark to light mode. The settings are remembered so that every time the user returns to the application, he can enjoy the design he chose.',
@@ -78,7 +100,7 @@ const projectsData = [
   {
     id: 'task-master',
     title: 'TaskMaster',
-    skills: ['React', 'Tailwind', 'Syncfusion', 'Context API'],
+    skills: ['React', 'TailwindCSS', 'Syncfusion', 'Context API'],
     description: [
       'TaskMaster is, as the name suggests, a simulation of a real admin panel. It contains functions such as an overview of employees, a calendar for the purpose of reminders, kanban and many other cool things.',
       'It also has options to change themes and change from dark to light mode. The settings are remembered so that every time the user returns to the application, he can enjoy the design he chose.',

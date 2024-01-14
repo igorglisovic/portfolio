@@ -94,6 +94,8 @@
     position: initial;
     margin-top: 30px;
     margin-inline: auto;
+    width: fit-content;
+    display: block;
   }
 }
 
@@ -113,9 +115,7 @@
   }
 
   .cv-btn {
-    margin-top: 25px;
-    position: initial;
-    margin-inline: auto;
+    margin-top: 28px;
   }
 
   .aboutme-article p:last-of-type {

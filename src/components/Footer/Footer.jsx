@@ -12,56 +12,20 @@ const Footer = () => {
 
   return (
     <footer data-scroll-section>
-      {/* <svg
-        width="35"
-        height="595"
-        viewBox="0 0 35 595"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className={classes['bg-line']}
-      >
-        <path d="M1 1C15 77.8333 41 304.1 33 594.5" stroke="#5555ff" />
-      </svg> */}
-
-      {/* <svg
-        width="64"
-        height="595"
-        viewBox="0 0 64 595"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className={classes['bg-line']}
-      >
-        <path d="M1 1C30.5 71.3333 82.6 288.5 55 594.5" stroke="#5555ff" />
-      </svg> */}
-      <svg
-        width="152"
-        height="800"
-        viewBox="0 0 152 800"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className={classes['bg-line']}
-      >
-        <path
-          d="M1 1C39.5 40.2911 110.1 138.648 84.5 217.748C52.5 316.622 1 347.641 1 413.945C1 466.988 101 548.749 151 583"
-          stroke="#5555ff"
-        />
-      </svg>
-
-      {/* <svg
-        width="152"
-        height="800"
-        viewBox="0 0 152 800"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className={classes['bg-line']}
-      >
-        <path
-          d="M1 1C39.5 51.6667 110.1 178.5 84.5 280.5C52.5 408 1 448 1 533.5C1 601.9 101 707.333 151 751.5"
-          stroke="#5555ff"
-        />
-      </svg> */}
-
-      <Container>
+      <Container style={{ position: 'relative' }}>
+        <svg
+          width="152"
+          height="800"
+          viewBox="0 0 152 800"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className={classes['bg-line']}
+        >
+          <path
+            d="M1 1C13.5 40.2911 110.1 138.648 84.5 217.748C52.5 316.622 1 347.641 1 413.945C1 466.988 101 548.749 151 583"
+            stroke="#5555ff"
+          />
+        </svg>
         <div className={classes['main-footer']}>
           <div className={classes['footer-nav']} {...scrollAttributes}>
             <LinkHover>
@@ -95,8 +59,33 @@ const Footer = () => {
           data-scroll
           data-scroll-class="loading-active"
         >
-          <span>Developed by &copy;Igor Glisovic</span>
-          {/* <span>Made with React JS</span> */}
+          <span>&copy; Igor Glisovic {currentYear}</span>
+          <ul>
+            <li>
+              <LinkHover>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/igor-glisovic/"
+                >
+                  LN
+                </a>
+              </LinkHover>
+            </li>
+            <li>
+              <LinkHover>
+                <a target="_blank" href="https://github.com/igorglisovic">
+                  GH
+                </a>
+              </LinkHover>
+            </li>
+            <li>
+              <LinkHover>
+                <a target="_blank" href="https://www.youtube.com/@splajs">
+                  YT
+                </a>
+              </LinkHover>
+            </li>
+          </ul>
         </div>
       </Container>
     </footer>

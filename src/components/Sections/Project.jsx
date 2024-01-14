@@ -76,6 +76,16 @@ const Project = ({ projectId }) => {
                 </p>
               ))}
             </div>
+            <div>
+              <h3 {...scrollAttributes}>My role</h3>
+              {data.role.length
+                ? data.role.map((role, i) => (
+                    <p className={classes.desc} {...scrollAttributes} key={i}>
+                      • {role}.
+                    </p>
+                  ))
+                : ''}
+            </div>
             {data.github && (
               <div className={classes.skills}>
                 <h3 {...scrollAttributes}>Source Code</h3>

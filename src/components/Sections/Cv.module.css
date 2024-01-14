@@ -49,7 +49,7 @@
 
 .picture {
   width: clamp(130px, 18vw, 250px);
-  aspect-ratio: 1;
+  height: clamp(130px, 18vw, 250px);
   align-self: center;
 }
 

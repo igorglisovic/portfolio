@@ -64,6 +64,25 @@
   right: 17%;
 }
 
+@media only screen and (min-width: 2100px) {
+  .bg-line {
+    right: 25%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .bg-line {
+    right: 13%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .bg-line {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .projects h2::before {
     width: 20px;
