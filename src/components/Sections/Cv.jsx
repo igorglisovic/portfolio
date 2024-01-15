@@ -54,6 +54,21 @@ const Cv = () => {
               <div className={classes['sidebar-row']}>
                 <div className={classes['sidebar-title']}>
                   <img src={birthIcon} alt="Birth icon" />
+                  <span>LinkedIn:</span>
+                </div>
+                <h4>
+                  <a
+                    aria-label="linkedin profile igor glisovic"
+                    target="_blank"
+                    href="https://linkedin.com/in/igor-glisovic/"
+                  >
+                    linkedin.com/in/igor-glisovic
+                  </a>
+                </h4>
+              </div>
+              <div className={classes['sidebar-row']}>
+                <div className={classes['sidebar-title']}>
+                  <img src={birthIcon} alt="Birth icon" />
                   <span>Date of birth:</span>
                 </div>
                 <h4>
@@ -150,26 +165,15 @@ const Cv = () => {
           </aside>
           <main className={classes['cv-main']}>
             <div className={classes['main-section']}>
-              {/* <div className={classes['main-title']}>
-                <img
-                  src={aboutIcon}
-                  className={classes.about}
-                  alt="Contact icon"
-                />
-
-                <h4>About me</h4>
-              </div>
-              <div className={classes['main-content']}>
+              <div
+                className={`${classes['main-content']} ${classes['about-paragraph']}`}
+              >
                 <p className={classes['about-text']}>
-                  Enthusiastic, responsible, and hard-working IT person. Working
-                  on different projects helped me adapt to the changes quickly
-                  and made me a mature team worker. Ability to think through a
-                  problem coupled with the confidence to make ideas heard.
-                  Excited to pursue new companies to grow my skills while
-                  facilitating the empowerment and vocalization of marginalized
-                  communities.
+                  Developer valued for driving high-performance accessible web
+                  experiences. I design quality, user-friendly, and scalable
+                  products regardless of stack.
                 </p>
-              </div> */}
+              </div>
               <div className={classes['main-title']}>
                 <img
                   src={aboutIcon}
