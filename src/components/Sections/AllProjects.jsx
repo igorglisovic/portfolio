@@ -10,7 +10,7 @@ const AllProjects = () => {
       <Container>
         <div className={classes['projects-wrapper']}>
           <div className={classes['title']}>
-            <h2 {...scrollAttributes}>All Projects</h2>
+            <h1 {...scrollAttributes}>All Projects</h1>
           </div>
           <div className={classes['card-wrapper']}>
             {projectsData.map(project => (

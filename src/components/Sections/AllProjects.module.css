@@ -9,18 +9,42 @@
 .projects-wrapper {
   padding: clamp(1rem, 5vw, 4rem);
   background-color: #fff;
-  /* border-radius: 20px; */
 }
 
-.projects-wrapper h2 {
+.projects-wrapper h1 {
+  font-size: clamp(1.8rem, 2.5vw, 2.9rem);
   color: var(--dark-blue-clr);
   margin-bottom: 20px;
+  position: relative;
+  width: fit-content;
+}
+
+.projects-wrapper h1::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: var(--secondary-clr);
+  bottom: 8px;
+  right: 3px;
 }
 
 .card-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
+}
+
+@media only screen and (max-width: 1284px) {
+  .projects-wrapper h1::before {
+    bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 1520px) {
+  .projects-wrapper h1::before {
+    bottom: 5px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
