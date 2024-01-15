@@ -88,6 +88,11 @@ const projectsData = [
       'TaskMaster is, as the name suggests, a simulation of a real admin panel. It contains functions such as an overview of employees, a calendar for the purpose of reminders, kanban and many other cool things.',
       'It also has options to change themes and change from dark to light mode. The settings are remembered so that every time the user returns to the application, he can enjoy the design he chose.',
     ],
+    role: [
+      "Designed and developed the entire UX/UI of the company's marketing site",
+      'Built custom and outstanding page transitions',
+      'Collaborated closely with the design team to create an attractive UI',
+    ],
     link: 'https://igorglisovic.netlify.app/',
     img: { avif: dashboardAvif, webp: dashboardWebp, jpg: dashboardJpg },
     imgSlider: [

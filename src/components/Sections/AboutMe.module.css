@@ -77,6 +77,18 @@
   transition: opacity 2s;
 }
 
+@media only screen and (max-width: 1615px) {
+  .cv-btn {
+    bottom: -15px;
+  }
+}
+
+@media only screen and (max-width: 1289px) {
+  .cv-btn {
+    bottom: 0px;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .aboutme-wrapper {
     flex-direction: column;

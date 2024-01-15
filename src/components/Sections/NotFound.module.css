@@ -1,6 +1,7 @@
 .notfound {
   padding: clamp(6.5rem, 13vw, 12rem) 0;
   background-color: #fff;
+  min-height: calc(100vh - 430px);
 }
 
 .notfound h1 {
