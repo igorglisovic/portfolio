@@ -55,7 +55,7 @@ const projectsData = [
     title: 'Cars',
     skills: [
       'Next.js',
-      'TailwindCSS',
+      'Tailwind CSS',
       'MongoDB',
       'Mongoose',
       'Context API',
@@ -83,7 +83,7 @@ const projectsData = [
   {
     id: 'trim-creative',
     title: 'TrimCreative',
-    skills: ['Next.js', 'TailwindCSS', 'Framer motion'],
+    skills: ['Next.js', 'Tailwind CSS', 'Framer motion'],
     description: [
       'TaskMaster is, as the name suggests, a simulation of a real admin panel. It contains functions such as an overview of employees, a calendar for the purpose of reminders, kanban and many other cool things.',
       'It also has options to change themes and change from dark to light mode. The settings are remembered so that every time the user returns to the application, he can enjoy the design he chose.',
@@ -105,7 +105,7 @@ const projectsData = [
   {
     id: 'task-master',
     title: 'TaskMaster',
-    skills: ['React', 'TailwindCSS', 'Syncfusion', 'Context API'],
+    skills: ['React', 'Tailwind CSS', 'Syncfusion', 'Context API'],
     description: [
       'TaskMaster is, as the name suggests, a simulation of a real admin panel. It contains functions such as an overview of employees, a calendar for the purpose of reminders, kanban and many other cool things.',
       'It also has options to change themes and change from dark to light mode. The settings are remembered so that every time the user returns to the application, he can enjoy the design he chose.',

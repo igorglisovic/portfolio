@@ -60,7 +60,7 @@ const AboutMe = React.forwardRef((_, ref) => {
               <li>React</li>
               <li>Next.js</li>
               <li>TypeScript</li>
-              <li>TailwindCSS</li>
+              <li>Tailwind CSS</li>
               <li>Sass</li>
               <li>MongoDB</li>
               <li>HTML</li>

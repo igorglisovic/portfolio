@@ -33,8 +33,7 @@
 }
 
 .hero-article p {
-  font-size: clamp(0.85rem, 1.1vw, 1.3rem);
-  font-size: clamp(0.83rem, 1.1vw, 1.3rem);
+  font-size: clamp(0.9rem, 1.1vw, 1.3rem);
 }
 
 .hero-article h1::before {
