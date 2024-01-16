@@ -51,7 +51,10 @@ const Cv = () => {
               <h3>Front-end Web Developer</h3>
             </div>
             <div className={`${classes['sidebar-section']} ${classes.group}`}>
-              <div className={classes['sidebar-row']}>
+              <div
+                className={classes['sidebar-row']}
+                style={{ marginTop: '10px' }}
+              >
                 <div className={classes['sidebar-title']}>
                   <img src={birthIcon} alt="Birth icon" />
                   <span>LinkedIn:</span>
@@ -80,7 +83,11 @@ const Cv = () => {
                   <img src={emailIcon} alt="Email icon" />
                   <span>E-mail address:</span>
                 </div>
-                <h4>contact@igorglisovic.com</h4>
+                <h4>
+                  <a href="mailto:contact@igorglisovic.com">
+                    contact@igorglisovic.com
+                  </a>
+                </h4>
               </div>
               <div className={classes[classes['sidebar-row']]}>
                 <div className={classes['sidebar-title']}>
@@ -102,11 +109,41 @@ const Cv = () => {
                     className={classes.code}
                     alt="Code icon"
                   />
-                  <span>Next.js</span>
+                  <span>Core Technologies:</span>
                 </div>
-                <h4>6+ Months</h4>
+                <ul>
+                  <li>
+                    <h4>• JavaScript</h4>
+                    <h4>• React</h4>
+                    <h4>• Next.js</h4>
+                    <h4>• TypeScript</h4>
+                    <h4>• Tailwind CSS</h4>
+                    <h4>• Sass</h4>
+                    <h4>• MongoDB</h4>
+                  </li>
+                </ul>
               </div>
               <div className={classes['sidebar-row']}>
+                <div className={classes['sidebar-title']}>
+                  <img
+                    src={codeIcon}
+                    className={classes.code}
+                    alt="Code icon"
+                  />
+                  <span>Other Technologies:</span>
+                </div>
+                <ul>
+                  <li>
+                    <h4>• Software Testing</h4>
+                    <h4>• SE Optimization</h4>
+                    <h4>• Responsive Web Design</h4>
+                    <h4>• Git</h4>
+                    <h4>• Figma</h4>
+                    <h4>• Photoshop</h4>
+                  </li>
+                </ul>
+              </div>
+              {/* <div className={classes['sidebar-row']}>
                 <div className={classes['sidebar-title']}>
                   <img
                     src={codeIcon}
@@ -150,7 +187,7 @@ const Cv = () => {
                   <span>WordPress</span>
                 </div>
                 <h4>3+ Years</h4>
-              </div>
+              </div> */}
             </div>
             <div className={`${classes['sidebar-section']}`}>
               <a
@@ -175,6 +212,93 @@ const Cv = () => {
                 </p>
               </div>
               <div className={classes['main-title']}>
+                <img
+                  src={aboutIcon}
+                  className={classes.about}
+                  alt="Contact icon"
+                />
+
+                <h4>Work Experience</h4>
+              </div>
+              <div className={classes['main-content']}>
+                <h4 className={classes['experience-title']}>
+                  Frontend Web Developer <span>at</span> TrimCreative
+                </h4>
+                <h5 className={classes['experience-subtitle']}>
+                  July 2023 - Present | Belgrade, Serbia
+                </h5>
+                <div className={classes['experience-desc']}>
+                  <p>
+                    • Cars – Created whole UI/UX for Web application where users
+                    can buy, sell, and explore a diverse range of cars. It
+                    consists of about 10 different screens. Implemented Google
+                    and credentials login and register logic. Created the
+                    structure of the MongoDB database and connected it through
+                    the backend part of the application.
+                  </p>
+                  <p>
+                    • TrimCreative - Designed and developed the entire UX/UI of
+                    the company's marketing site. Built custom and outstanding
+                    page transitions. Collaborated closely with the design team
+                    to create an attractive UI.
+                  </p>
+                </div>
+                <h4 className={classes['experience-title']}>
+                  Quality Assurance Tester <span>at</span> DVP d.o.o
+                </h4>
+                <h5 className={classes['experience-subtitle']}>
+                  Aug 2023 - Present | Belgrade, Serbia
+                </h5>
+                <div className={classes['experience-desc']}>
+                  <p>
+                    • My primary responsibility revolves around ensuring the
+                    flawless functionality of applications. I meticulously test
+                    and conduct comprehensive quality assurance assessments to
+                    guarantee smooth operations and identify any potential bugs
+                    or issues before deployment.
+                  </p>
+                  <p>
+                    • By leveraging my expertise in the software and strong
+                    communication skills, I effectively convey customer insights
+                    from our approximately 300+ active users of the software to
+                    the development team.
+                  </p>
+                </div>
+                <h4 className={classes['experience-title']}>
+                  Customer Experience Specialist <span>at</span> DVP d.o.o.
+                </h4>
+                <h5 className={classes['experience-subtitle']}>
+                  Jan 2023 - Aug 2023 | Belgrade, Serbia
+                </h5>
+                <div className={classes['experience-desc']}>
+                  <p>
+                    • I actively collaborated with 20 companies and provided
+                    technical support to over 100 users. I adeptly
+                    troubleshooted and resolved a wide range of hardware and
+                    software issues, ensuring the seamless operation of all
+                    systems within the organization.
+                  </p>
+                </div>
+                <h4 className={classes['experience-title']}>
+                  Freelance Frontend Developer
+                </h4>
+                <h5 className={classes['experience-subtitle']}>
+                  Aug 2023 - Mar 2023 | Remote
+                </h5>
+                <div className={classes['experience-desc']}>
+                  <p>
+                    •{' '}
+                    <a target="_blank" href="https://mobilnedizalice.com/">
+                      MobilneDizalice
+                    </a>{' '}
+                    - Designed and developed the entire UX/UI of the website for
+                    a startup company, using Figma and React. Collaborated
+                    closely with the client to understand business goals and
+                    design preferences.
+                  </p>
+                </div>
+              </div>
+              {/* <div className={classes['main-title']}>
                 <img
                   src={aboutIcon}
                   className={classes.about}
@@ -250,15 +374,15 @@ const Cv = () => {
                     development and working with RESTful APIs.
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className={classes['main-section']}>
               <div className={classes['main-title']}>
                 <img src={skillsIcon} alt="Skills icon" />
-                <h4>Skills</h4>
+                <h4>Soft Skills</h4>
               </div>
               <div className={classes['main-content']}>
-                <div className={classes['main-row']}>
+                {/* <div className={classes['main-row']}>
                   <div className={classes['main-row__title']}>
                     <img
                       src={codeIcon}
@@ -294,7 +418,7 @@ const Cv = () => {
                       Figma);
                     </li>
                   </ul>
-                </div>
+                </div> */}
                 {/* <div className={classes['main-row']}>
                   <div className={classes['main-row__title']}>
                     <img
@@ -325,20 +449,7 @@ const Cv = () => {
                     </li>
                   </ul>
                 </div> */}
-                <div className={classes['main-row']}>
-                  <div className={classes['main-row__title']}>
-                    <img
-                      src={languageIcon}
-                      className={classes.language}
-                      alt="Language icon"
-                    />
-                    <span>Languages</span>
-                  </div>
-                  <ul>
-                    <li>• Serbian (native)</li>
-                    <li>• English (learned during high school)</li>
-                  </ul>
-                </div>
+
                 <div className={classes['main-row']}>
                   <div className={classes['main-row__title']}>
                     <img
@@ -372,13 +483,27 @@ const Cv = () => {
                 </div>
                 <div className={classes['main-row']}>
                   <div className={classes['main-row__title']}>
+                    <img
+                      src={languageIcon}
+                      className={classes.language}
+                      alt="Language icon"
+                    />
+                    <span>Languages</span>
+                  </div>
+                  <ul>
+                    <li>• Serbian (native)</li>
+                    <li>• English (learned during high school)</li>
+                  </ul>
+                </div>
+                {/* <div className={classes['main-row']}>
+                  <div className={classes['main-row__title']}>
                     <img src={otherIcon} alt="Other icon" />
                     <span>Other</span>
                   </div>
                   <ul>
                     <li>• Driving license: B, AM (EU Directive 2020)</li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className={classes['main-section']}>
