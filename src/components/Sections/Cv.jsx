@@ -229,18 +229,26 @@ const Cv = () => {
                 </h5>
                 <div className={classes['experience-desc']}>
                   <p>
-                    • Cars – Created whole UI/UX for Web application where users
-                    can buy, sell, and explore a diverse range of cars. It
-                    consists of about 10 different screens. Implemented Google
-                    and credentials login and register logic. Created the
-                    structure of the MongoDB database and connected it through
-                    the backend part of the application.
+                    •{' '}
+                    <a target="_blank" href="https://buyfordrive.com/">
+                      BuyForDrive
+                    </a>{' '}
+                    – Created whole UI/UX for Web application where users can
+                    buy, sell, and explore various cars. It consists of about 10
+                    different screens. Implemented Google and credentials login
+                    and register logic. Created the structure of the MongoDB
+                    database and connected it through the backend part of the
+                    application.
                   </p>
                   <p>
-                    • TrimCreative - Designed and developed the entire UX/UI of
-                    the company's marketing site. Built custom and outstanding
-                    page transitions. Collaborated closely with the design team
-                    to create an attractive UI.
+                    •{' '}
+                    <a target="_blank" href="https://trimcreative.com/">
+                      TrimCreative
+                    </a>{' '}
+                    - Designed and developed the entire UX/UI of the company's
+                    marketing site. Built custom and outstanding page
+                    transitions. Collaborated closely with the design team to
+                    create an attractive UI.
                   </p>
                 </div>
                 <h4 className={classes['experience-title']}>
