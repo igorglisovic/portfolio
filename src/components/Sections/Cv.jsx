@@ -561,7 +561,7 @@ const Cv = () => {
               </div>
             </div>
 
-            <span className={classes.edit}>Last edit: February 2023.</span>
+            <span className={classes.edit}>Last edit: January 2024.</span>
           </main>
         </div>
       </Container>

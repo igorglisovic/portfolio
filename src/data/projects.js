@@ -48,60 +48,70 @@ import mobilneSlider3 from '../assets/mobilne-slider3.jpg'
 import mobilneSlider4 from '../assets/mobilne-slider4.jpg'
 import mobilneSlider5 from '../assets/mobilne-slider5.jpg'
 import mobilneSlider6 from '../assets/mobilne-slider6.jpg'
+// BuyForDrive images
+import buyForDriveJpg from '../assets/buy-for-drive.jpg'
+import buyForDriveAvif from '../assets/buy-for-drive.avif'
+import buyForDriveWebp from '../assets/buy-for-drive.webp'
+import buyForDrive1 from '../assets/buyfordrive-1.jpg'
+import buyForDrive2 from '../assets/buyfordrive-2.jpg'
+import buyForDrive3 from '../assets/buyfordrive-3.jpg'
+import buyForDrive4 from '../assets/buyfordrive-4.jpg'
+import buyForDrive5 from '../assets/buyfordrive-5.jpg'
 
 const projectsData = [
   {
-    id: 'cars',
-    title: 'Cars',
+    id: 'buy-for-drive',
+    title: 'BuyForDrive',
     skills: [
       'Next.js',
-      'Tailwind CSS',
-      'MongoDB',
       'Mongoose',
+      'MongoDB',
+      'Tailwind CSS',
       'Context API',
       'Framer motion',
       'Server Components',
     ],
     description: [
-      'TaskMaster is, as the name suggests, a simulation of a real admin panel. It contains functions such as an overview of employees, a calendar for the purpose of reminders, kanban and many other cool things.',
-      'It also has options to change themes and change from dark to light mode. The settings are remembered so that every time the user returns to the application, he can enjoy the design he chose.',
+      'BuyForDrive is an innovative platform that revolutionizes the car buying experience. It offers a wide range of features, including a comprehensive overview of available cars, a user-friendly interface for buying and selling cars, and advanced search options to help users find their dream car.',
     ],
     role: [
       'Created whole UI/UX for Web application where users can buy, sell, and explore a diverse range of cars',
       'Implemented Google and credentials login and register logic',
       'Created the structure of the MongoDB database and connected it through the backend part of the application.',
     ],
-    link: 'https://igorglisovic.netlify.app/',
-    img: { avif: dashboardAvif, webp: dashboardWebp, jpg: dashboardJpg },
+    github: 'https://github.com/igorglisovic/buy-for-drive',
+    link: 'https://buyfordrive.com/',
+    img: { avif: buyForDriveAvif, webp: buyForDriveWebp, jpg: buyForDriveJpg },
     imgSlider: [
-      dashboardSlider1,
-      dashboardSlider2,
-      dashboardSlider3,
-      dashboardSlider4,
+      buyForDrive1,
+      buyForDrive2,
+      buyForDrive3,
+      buyForDrive4,
+      buyForDrive5,
     ],
   },
-  {
-    id: 'trim-creative',
-    title: 'TrimCreative',
-    skills: ['Next.js', 'Tailwind CSS', 'Framer motion'],
-    description: [
-      'TaskMaster is, as the name suggests, a simulation of a real admin panel. It contains functions such as an overview of employees, a calendar for the purpose of reminders, kanban and many other cool things.',
-      'It also has options to change themes and change from dark to light mode. The settings are remembered so that every time the user returns to the application, he can enjoy the design he chose.',
-    ],
-    role: [
-      "Designed and developed the entire UX/UI of the company's marketing site",
-      'Built custom and outstanding page transitions',
-      'Collaborated closely with the design team to create an attractive UI',
-    ],
-    link: 'https://igorglisovic.netlify.app/',
-    img: { avif: dashboardAvif, webp: dashboardWebp, jpg: dashboardJpg },
-    imgSlider: [
-      dashboardSlider1,
-      dashboardSlider2,
-      dashboardSlider3,
-      dashboardSlider4,
-    ],
-  },
+  // {
+  //   id: 'trim-creative',
+  //   title: 'TrimCreative',
+  //   skills: ['Next.js', 'Tailwind CSS', 'Framer motion'],
+  //   description: [
+  //     'TaskMaster is, as the name suggests, a simulation of a real admin panel. It contains functions such as an overview of employees, a calendar for the purpose of reminders, kanban and many other cool things.',
+  //     'It also has options to change themes and change from dark to light mode. The settings are remembered so that every time the user returns to the application, he can enjoy the design he chose.',
+  //   ],
+  //   role: [
+  //     "Designed and developed the entire UX/UI of the company's marketing site",
+  //     'Built custom and outstanding page transitions',
+  //     'Collaborated closely with the design team to create an attractive UI',
+  //   ],
+  //   link: 'https://igorglisovic.netlify.app/',
+  //   img: { avif: dashboardAvif, webp: dashboardWebp, jpg: dashboardJpg },
+  //   imgSlider: [
+  //     dashboardSlider1,
+  //     dashboardSlider2,
+  //     dashboardSlider3,
+  //     dashboardSlider4,
+  //   ],
+  // },
   {
     id: 'task-master',
     title: 'TaskMaster',
@@ -123,10 +133,14 @@ const projectsData = [
   {
     id: 'mobilne-dizalice',
     title: 'MobilneDizalice',
-    skills: ['React', 'CSS Modules', 'Swiper'],
+    skills: ['React', 'CSS Modules', 'Swiper', 'Figma'],
     description: [
-      'TaskMaster is, as the name suggests, a simulation of a real admin panel. It contains functions such as an overview of employees, a calendar for the purpose of reminders, kanban and many other cool things.',
-      'It also has options to change themes and change from dark to light mode. The settings are remembered so that every time the user returns to the application, he can enjoy the design he chose.',
+      'MobilneDizalice is a website designed for a startup company, offering a seamless user experience for exploring a range of mobile cranes. Users can easily navigate through the site to find the most suitable crane for their needs.',
+      'The design focuses on simplicity and functionality, ensuring a smooth user experience from browsing to selection.',
+    ],
+    role: [
+      'Designed and developed the entire UX/UI of the website',
+      'Collaborated closely with the client to understand business goals and design preferences',
     ],
     link: 'https://mobilnedizalice.com/',
     github: 'https://github.com/igorglisovic/mobilnedizalice',
@@ -149,8 +163,11 @@ const projectsData = [
     title: 'Ciscenje D&D',
     skills: ['WordPress', 'Elementor'],
     description: [
-      'TaskMaster is, as the name suggests, a simulation of a real admin panel. It contains functions such as an overview of employees, a calendar for the purpose of reminders, kanban and many other cool things.',
-      'It also has options to change themes and change from dark to light mode. The settings are remembered so that every time the user returns to the application, he can enjoy the design he chose.',
+      "Website designed to showcase the services and expertise of a cleaning company. Offering a clean and intuitive user experience, the site presents comprehensive information about the company's cleaning solutions.",
+    ],
+    role: [
+      "Developed the entire UX/UI of the company's marketing site",
+      'Collaborated closely with the design team to create an attractive UI',
     ],
     link: 'https://www.ciscenjedd.rs/',
     img: { avif: ddAvif, webp: ddWebp, jpg: ddJpg },

@@ -12,7 +12,11 @@ const Projects = React.forwardRef((_, ref) => {
   const [mediaMatches, setMediaMatches] = useState(false)
   const [hasBeenInView, setHasBeenInView] = useState(false)
 
-  const { ref: lineRef, inView } = useInView({
+  const {
+    ref: lineRef,
+    inView,
+    entry,
+  } = useInView({
     /* Optional options */
     threshold: 0,
   })
