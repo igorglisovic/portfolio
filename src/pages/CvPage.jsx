@@ -18,7 +18,7 @@ const CvPage = () => {
       containerRef={containerRef}
     >
       <main className="project" data-scroll-container ref={containerRef}>
-        {/* {createPortal(<Loader />, document.getElementById('overlays'))} */}
+        {createPortal(<Loader />, document.getElementById('overlays'))}
         <Header />
         <Cv />
         <Footer />
