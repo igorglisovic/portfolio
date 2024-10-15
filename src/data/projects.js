@@ -57,8 +57,43 @@ import buyForDrive2 from '../assets/buyfordrive-2.jpg'
 import buyForDrive3 from '../assets/buyfordrive-3.jpg'
 import buyForDrive4 from '../assets/buyfordrive-4.jpg'
 import buyForDrive5 from '../assets/buyfordrive-5.jpg'
+// Skedua images
+import skeduaJpg from '../assets/skedua.jpg'
+import skeduaAvif from '../assets/skedua.avif'
+import skeduaWebp from '../assets/skedua.webp'
+import skedua1 from '../assets/skedua-1.jpg'
+import skedua2 from '../assets/skedua-2.jpg'
+import skedua3 from '../assets/skedua-3.jpg'
+import skedua4 from '../assets/skedua-4.jpg'
 
 const projectsData = [
+  {
+    id: 'skedua',
+    title: 'Skedua',
+    skills: [
+      'Next.js',
+      'Mongoose',
+      'MongoDB',
+      'Tailwind CSS',
+      'Context API',
+      'Framer motion',
+      'Server Components',
+    ],
+    description: [
+      'Skedua is a powerful web application designed to streamline appointment scheduling for business clients. With a user-friendly interface, it serves both clients and administrators, providing a seamless experience for organizing and managing appointments.',
+      'Currently used by 10 businesses with around 300 active users per client, Skedua ensures efficiency and scalability for any organization. The platform includes an intuitive client-side for easy appointment booking, and a robust admin panel for controlling user access, managing employees, and monitoring appointment statistics.',
+      'Built with modern web technologies, Skedua highlights my expertise in delivering scalable, business-focused solutions that cater to real-world needs.',
+    ],
+    role: [
+      'Created a responsive, user-friendly interface for both client-side and back-office',
+      'Developed secure, scalable server-side logic, handling appointment bookings, real-time data updates, and user authentication',
+      'Coordinated with clients to gather requirements, managed development timelines, and deployed updates on Vercel for the smooth operation of the app',
+    ],
+    github: '',
+    link: 'https://demo.skedua.app/',
+    img: { avif: skeduaAvif, webp: skeduaWebp, jpg: skeduaJpg },
+    imgSlider: [skedua1, skedua2, skedua3, skedua4],
+  },
   {
     id: 'buy-for-drive',
     title: 'BuyForDrive',
@@ -77,18 +112,12 @@ const projectsData = [
     role: [
       'Created whole UI/UX for Web application where users can buy, sell, and explore a diverse range of cars',
       'Implemented Google and credentials login and register logic',
-      'Created the structure of the MongoDB database and connected it through the backend part of the application.',
+      'Created the structure of the MongoDB database and connected it through the backend part of the application',
     ],
     github: 'https://github.com/igorglisovic/buy-for-drive',
     link: 'https://buyfordrive.com/',
     img: { avif: buyForDriveAvif, webp: buyForDriveWebp, jpg: buyForDriveJpg },
-    imgSlider: [
-      buyForDrive1,
-      buyForDrive2,
-      buyForDrive3,
-      buyForDrive4,
-      buyForDrive5,
-    ],
+    imgSlider: [buyForDrive1, buyForDrive2, buyForDrive3, buyForDrive4, buyForDrive5],
   },
   // {
   //   id: 'trim-creative',
@@ -123,12 +152,7 @@ const projectsData = [
     link: 'https://igorglisovic.netlify.app/',
     github: 'https://github.com/igorglisovic/admin-dashboard',
     img: { avif: dashboardAvif, webp: dashboardWebp, jpg: dashboardJpg },
-    imgSlider: [
-      dashboardSlider1,
-      dashboardSlider2,
-      dashboardSlider3,
-      dashboardSlider4,
-    ],
+    imgSlider: [dashboardSlider1, dashboardSlider2, dashboardSlider3, dashboardSlider4],
   },
   {
     id: 'mobilne-dizalice',
@@ -181,8 +205,7 @@ const projectsData = [
       'MovieMatch is an application that allows users to find the right movie for them to watch. The application contains a search engine for movies and actors. On the home page, upcoming movies and popular movies are highlighted. The user can view the trailer of each movie as well as information about the actors and crew of the movie.',
     ],
     link: 'https://igorglisovic.github.io/MoviesApp/',
-    github:
-      'https://github.com/igorglisovic/igorglisovic.github.io/tree/master/MoviesApp',
+    github: 'https://github.com/igorglisovic/igorglisovic.github.io/tree/master/MoviesApp',
     img: { avif: moviesAvif, webp: moviesWebp, jpg: moviesJpg },
     imgSlider: [moviesSlider1, moviesSlider2, moviesSlider3, moviesSlider4],
   },
@@ -196,8 +219,7 @@ const projectsData = [
       'It is built in OOP Javascript and uses mockapi.io as a database where all posts, users, and comments of the social network are located.',
     ],
     link: 'https://igorglisovic.github.io/SocialNetwork/',
-    github:
-      'https://github.com/igorglisovic/igorglisovic.github.io/tree/master/SocialNetwork',
+    github: 'https://github.com/igorglisovic/igorglisovic.github.io/tree/master/SocialNetwork',
     img: { avif: hexaAvif, webp: hexaWebp, jpg: hexaJpg },
     imgSlider: [HexaSlider1, HexaSlider2, HexaSlider3, HexaSlider4],
   },
@@ -205,13 +227,7 @@ const projectsData = [
   {
     id: 'portfolio',
     title: 'My Portfolio',
-    skills: [
-      'React',
-      'CSS Modules',
-      'Framer Motion',
-      'Git',
-      'Locomotive Scroll',
-    ],
+    skills: ['React', 'CSS Modules', 'Framer Motion', 'Git', 'Locomotive Scroll'],
     description: ['Just try it :)'],
     link: 'https://igorglisovic.com',
     github: 'https://github.com/igorglisovic/portfolio',
@@ -251,11 +267,6 @@ const projectsData = [
   // },
 ]
 
-const featuredProjectsData = [
-  projectsData[0],
-  projectsData[1],
-  projectsData[2],
-  projectsData[3],
-]
+const featuredProjectsData = [projectsData[0], projectsData[1], projectsData[2], projectsData[3]]
 
 export { projectsData, featuredProjectsData }

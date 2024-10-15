@@ -39,7 +39,7 @@ const Cv = () => {
                 <source type="image/jpeg" srcSet={personalImageJpg} />
 
                 <img
-                  alt="Igor Glisovic Frontend Developer"
+                  alt="Igor Glišović Frontend Developer"
                   width={330}
                   height={330}
                   src={personalImagePng}
@@ -47,21 +47,18 @@ const Cv = () => {
               </picture>
             </div>
             <div className={`${classes['sidebar-section']} ${classes.path}`}>
-              <h2>Igor Glisovic</h2>
+              <h2>Igor Glišović</h2>
               <h3>Front-end Web Developer</h3>
             </div>
             <div className={`${classes['sidebar-section']} ${classes.group}`}>
-              <div
-                className={classes['sidebar-row']}
-                style={{ marginTop: '10px' }}
-              >
+              <div className={classes['sidebar-row']} style={{ marginTop: '10px' }}>
                 <div className={classes['sidebar-title']}>
                   <img src={birthIcon} alt="Birth icon" />
                   <span>LinkedIn:</span>
                 </div>
                 <h4>
                   <a
-                    aria-label="linkedin profile igor glisovic"
+                    aria-label="linkedin profile Igor Glišović"
                     target="_blank"
                     href="https://linkedin.com/in/igor-glisovic/"
                   >
@@ -84,18 +81,12 @@ const Cv = () => {
                   <span>E-mail address:</span>
                 </div>
                 <h4>
-                  <a href="mailto:contact@igorglisovic.com">
-                    contact@igorglisovic.com
-                  </a>
+                  <a href="mailto:contact@igorglisovic.com">contact@igorglisovic.com</a>
                 </h4>
               </div>
               <div className={classes[classes['sidebar-row']]}>
                 <div className={classes['sidebar-title']}>
-                  <img
-                    src={flagIcon}
-                    className={classes.nationality}
-                    alt="Flag icon"
-                  />
+                  <img src={flagIcon} className={classes.nationality} alt="Flag icon" />
                   <span>Nationality:</span>
                 </div>
                 <h4>Serbian</h4>
@@ -104,11 +95,7 @@ const Cv = () => {
             <div className={`${classes['sidebar-section']} ${classes.group}`}>
               <div className={classes['sidebar-row']}>
                 <div className={classes['sidebar-title']}>
-                  <img
-                    src={codeIcon}
-                    className={classes.code}
-                    alt="Code icon"
-                  />
+                  <img src={codeIcon} className={classes.code} alt="Code icon" />
                   <span>Core Technologies:</span>
                 </div>
                 <ul>
@@ -125,11 +112,7 @@ const Cv = () => {
               </div>
               <div className={classes['sidebar-row']}>
                 <div className={classes['sidebar-title']}>
-                  <img
-                    src={codeIcon}
-                    className={classes.code}
-                    alt="Code icon"
-                  />
+                  <img src={codeIcon} className={classes.code} alt="Code icon" />
                   <span>Other Technologies:</span>
                 </div>
                 <ul>
@@ -190,33 +173,21 @@ const Cv = () => {
               </div> */}
             </div>
             <div className={`${classes['sidebar-section']}`}>
-              <a
-                className={classes.btn}
-                target="_blank"
-                aria-label="Print cv"
-                href={cvPdf}
-              >
+              <a className={classes.btn} target="_blank" aria-label="Print cv" href={cvPdf}>
                 Download CV
               </a>
             </div>
           </aside>
           <main className={classes['cv-main']}>
             <div className={classes['main-section']}>
-              <div
-                className={`${classes['main-content']} ${classes['about-paragraph']}`}
-              >
+              <div className={`${classes['main-content']} ${classes['about-paragraph']}`}>
                 <p className={classes['about-text']}>
-                  Developer valued for driving high-performance accessible web
-                  experiences. I design quality, user-friendly, and scalable
-                  products regardless of stack.
+                  Developer valued for driving high-performance accessible web experiences. I design
+                  quality, user-friendly, and scalable products regardless of stack.
                 </p>
               </div>
               <div className={classes['main-title']}>
-                <img
-                  src={aboutIcon}
-                  className={classes.about}
-                  alt="Contact icon"
-                />
+                <img src={aboutIcon} className={classes.about} alt="Contact icon" />
 
                 <h4>Work Experience</h4>
               </div>
@@ -230,25 +201,33 @@ const Cv = () => {
                 <div className={classes['experience-desc']}>
                   <p>
                     •{' '}
+                    <a target="_blank" href="https://demo.skedua.app/">
+                      Skedua
+                    </a>{' '}
+                    – Created a responsive, user-friendly interface for both client-side and
+                    back-office, currently used by more than 10 business clients with around 300
+                    active users per client. Developed secure, scalable server-side logic for
+                    handling appointment bookings, real-time data updates, and user authentication.
+                    Came up with several key ideas that increased app sales by 30%.
+                  </p>
+                  <p>
+                    •{' '}
                     <a target="_blank" href="https://buyfordrive.com/">
                       BuyForDrive
                     </a>{' '}
-                    – Created whole UI/UX for Web application where users can
-                    buy, sell, and explore various cars. It consists of about 10
-                    different screens. Implemented Google and credentials login
-                    and register logic. Created the structure of the MongoDB
-                    database and connected it through the backend part of the
-                    application.
+                    – Created whole UI/UX for Web application where users can buy, sell, and explore
+                    various cars. It consists of about 10 different screens. Implemented Google and
+                    credentials login and register logic. Created the structure of the MongoDB
+                    database and connected it through the backend part of the application.
                   </p>
                   <p>
                     •{' '}
                     <a target="_blank" href="https://trimcreative.com/">
                       TrimCreative
                     </a>{' '}
-                    - Designed and developed the entire UX/UI of the company's
-                    marketing site. Built custom and outstanding page
-                    transitions. Collaborated closely with the design team to
-                    create an attractive UI.
+                    - Designed and developed the entire UX/UI of the company's marketing site. Built
+                    custom and outstanding page transitions. Collaborated closely with the design
+                    team to create an attractive UI.
                   </p>
                 </div>
                 <h4 className={classes['experience-title']}>
@@ -259,17 +238,15 @@ const Cv = () => {
                 </h5>
                 <div className={classes['experience-desc']}>
                   <p>
-                    • My primary responsibility revolves around ensuring the
-                    flawless functionality of applications. I meticulously test
-                    and conduct comprehensive quality assurance assessments to
-                    guarantee smooth operations and identify any potential bugs
-                    or issues before deployment.
+                    • My primary responsibility revolves around ensuring the flawless functionality
+                    of applications. I meticulously test and conduct comprehensive quality assurance
+                    assessments to guarantee smooth operations and identify any potential bugs or
+                    issues before deployment.
                   </p>
                   <p>
-                    • By leveraging my expertise in the software and strong
-                    communication skills, I effectively convey customer insights
-                    from our approximately 300+ active users of the software to
-                    the development team.
+                    • By leveraging my expertise in the software and strong communication skills, I
+                    effectively convey customer insights from our approximately 300+ active users of
+                    the software to the development team.
                   </p>
                 </div>
                 <h4 className={classes['experience-title']}>
@@ -280,29 +257,23 @@ const Cv = () => {
                 </h5>
                 <div className={classes['experience-desc']}>
                   <p>
-                    • I actively collaborated with 20 companies and provided
-                    technical support to over 100 users. I adeptly
-                    troubleshooted and resolved a wide range of hardware and
-                    software issues, ensuring the seamless operation of all
-                    systems within the organization.
+                    • I actively collaborated with 20 companies and provided technical support to
+                    over 100 users. I adeptly troubleshooted and resolved a wide range of hardware
+                    and software issues, ensuring the seamless operation of all systems within the
+                    organization.
                   </p>
                 </div>
-                <h4 className={classes['experience-title']}>
-                  Freelance Frontend Developer
-                </h4>
-                <h5 className={classes['experience-subtitle']}>
-                  Aug 2023 - Mar 2023 | Remote
-                </h5>
+                <h4 className={classes['experience-title']}>Freelance Frontend Developer</h4>
+                <h5 className={classes['experience-subtitle']}>Aug 2023 - Mar 2023 | Remote</h5>
                 <div className={classes['experience-desc']}>
                   <p>
                     •{' '}
                     <a target="_blank" href="https://mobilnedizalice.com/">
                       MobilneDizalice
                     </a>{' '}
-                    - Designed and developed the entire UX/UI of the website for
-                    a startup company, using Figma and React. Collaborated
-                    closely with the client to understand business goals and
-                    design preferences.
+                    - Designed and developed the entire UX/UI of the website for a startup company,
+                    using Figma and React. Collaborated closely with the client to understand
+                    business goals and design preferences.
                   </p>
                 </div>
               </div>
@@ -460,42 +431,31 @@ const Cv = () => {
 
                 <div className={classes['main-row']}>
                   <div className={classes['main-row__title']}>
-                    <img
-                      src={personIcon}
-                      className={classes.person}
-                      alt="Person icon"
-                    />
+                    <img src={personIcon} className={classes.person} alt="Person icon" />
                     <span>Personality</span>
                   </div>
                   <ul>
                     <li>
-                      • I thrive in collaborative environments and believe that
-                      the best results are achieved through teamwork.
+                      • I thrive in collaborative environments and believe that the best results are
+                      achieved through teamwork.
                     </li>
                     <li>
-                      • I am driven by a passion for creating impactful and
-                      innovative solutions.
+                      • I am driven by a passion for creating impactful and innovative solutions.
+                    </li>
+                    <li>• I have a natural curiosity and love to learn new things.</li>
+                    <li>
+                      • I take ownership of my work and am committed to delivering high-quality
+                      results.
                     </li>
                     <li>
-                      • I have a natural curiosity and love to learn new things.
-                    </li>
-                    <li>
-                      • I take ownership of my work and am committed to
-                      delivering high-quality results.
-                    </li>
-                    <li>
-                      • I have a knack for identifying challenges and coming up
-                      with effective solutions.
+                      • I have a knack for identifying challenges and coming up with effective
+                      solutions.
                     </li>
                   </ul>
                 </div>
                 <div className={classes['main-row']}>
                   <div className={classes['main-row__title']}>
-                    <img
-                      src={languageIcon}
-                      className={classes.language}
-                      alt="Language icon"
-                    />
+                    <img src={languageIcon} className={classes.language} alt="Language icon" />
                     <span>Languages</span>
                   </div>
                   <ul>
@@ -525,10 +485,7 @@ const Cv = () => {
                     <span>Sep 2021 - July 2022</span>
                   </div>
                   <div>
-                    <h5>
-                      React - The Complete Guide (incl Hooks, React Router,
-                      Redux)
-                    </h5>
+                    <h5>React - The Complete Guide (incl Hooks, React Router, Redux)</h5>
                     <div className={classes['main-row__subtitle']}>
                       <img src={udemyIcon} alt="Udemy icon" />
                       <span>Udemy Course - Maximilian Schwarzmüller</span>
@@ -540,9 +497,7 @@ const Cv = () => {
                     <span>July 2019 - Apr 2020</span>
                   </div>
                   <div>
-                    <h5>
-                      The Complete JavaScript Course: From Zero to Expert!
-                    </h5>
+                    <h5>The Complete JavaScript Course: From Zero to Expert!</h5>
                     <div className={classes['main-row__subtitle']}>
                       <img src={udemyIcon} alt="Udemy icon" />
                       <span>Udemy Course - Jonas Schmedtmann</span>
@@ -557,11 +512,7 @@ const Cv = () => {
                     <h5>Technical High School - Information Tehnology</h5>
 
                     <div className={classes['main-row__subtitle']}>
-                      <img
-                        src={homeIcon}
-                        className={classes.home}
-                        alt="Building icon"
-                      />
+                      <img src={homeIcon} className={classes.home} alt="Building icon" />
                       <span>High school in Serbia</span>
                     </div>
                   </div>
@@ -569,7 +520,7 @@ const Cv = () => {
               </div>
             </div>
 
-            <span className={classes.edit}>Last edit: January 2024.</span>
+            <span className={classes.edit}>Last edit: July 2024.</span>
           </main>
         </div>
       </Container>

@@ -75,7 +75,7 @@ const Footer = () => {
               <source type="image/webp" srcSet={personalImageWebp} />
               <source type="image/jpeg" srcSet={personalImageJpg} />
               <img
-                alt="Igor Glisovic Frontend Developer"
+                alt="Igor Glišović Frontend Developer"
                 width={200}
                 height={200}
                 src={personalImageJpg}
@@ -85,19 +85,12 @@ const Footer = () => {
         </div>
       </Container>
       <Container>
-        <div
-          className={classes['bottom-footer']}
-          data-scroll
-          data-scroll-class="loading-active"
-        >
-          <span>&copy; Igor Glisovic {currentYear}</span>
+        <div className={classes['bottom-footer']} data-scroll data-scroll-class="loading-active">
+          <span>&copy; Igor Glišović {currentYear}</span>
           <ul>
             <li>
               <LinkHover>
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/in/igor-glisovic/"
-                >
+                <a target="_blank" href="https://www.linkedin.com/in/igor-glisovic/">
                   LN
                 </a>
               </LinkHover>

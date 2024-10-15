@@ -1,5 +1,5 @@
 .cv {
-  padding: clamp(5.5rem, 10vw, 8rem) 0;
+  padding: 0;
 
   --antracite-clr: #393e42;
   --light-gray: #d6dde4;
@@ -17,6 +17,7 @@
   padding: 50px 0;
   position: relative;
   overflow: hidden;
+  transform: scale(0.8);
 }
 
 .cv-wrapper::before {
@@ -435,9 +436,14 @@
 }
 
 @media only screen and (max-width: 670px) {
+  .cv {
+    padding: clamp(5.5rem, 10vw, 8rem) 0;
+  }
+
   .cv-wrapper {
     flex-direction: column;
     padding: 40px 0;
+    transform: scale(1);
   }
 
   .cv-main,

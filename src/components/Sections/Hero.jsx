@@ -71,9 +71,8 @@ const Hero = React.forwardRef((_, ref) => {
               data-scroll-speed="1"
               data-scroll-delay="0.04"
             >
-              I enjoy building beautiful, creative frontend products. Focused on
-              developing experiences that constantly grow with a keen eye for
-              creating engaging UI.
+              I enjoy building beautiful, creative frontend products. Focused on developing
+              experiences that constantly grow with a keen eye for creating engaging UI.
             </p>
             <p
               className={classes['hero-quote']}
@@ -95,7 +94,7 @@ const Hero = React.forwardRef((_, ref) => {
               <source type="image/webp" srcSet={personalImageWebp} />
               <source type="image/jpeg" srcSet={personalImageJpg} />
               <img
-                alt="Igor Glisovic Frontend Developer"
+                alt="Igor Glišović Frontend Developer"
                 width={330}
                 height={330}
                 src={personalImageJpg}

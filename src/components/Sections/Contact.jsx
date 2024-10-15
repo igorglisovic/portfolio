@@ -43,6 +43,7 @@ const Contact = React.forwardRef((_, ref) => {
 
     setSubmited(true)
   }
+
   return (
     <section
       ref={ref}

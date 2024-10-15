@@ -3,7 +3,7 @@
   font-family: sans-serif;
 }
 
-.hamburger svg {
+.hamburger button svg {
   position: relative;
   width: clamp(60px, 5vw, 80px);
   cursor: pointer;
@@ -45,6 +45,14 @@
   top: 0px;
   right: 0px;
   overflow: hidden;
+}
+
+.bg-line {
+  position: absolute;
+  left: -120px;
+  transform: rotate(-23deg);
+  top: -340px;
+  z-index: 0 !important;
 }
 
 @keyframes to-close-icon {

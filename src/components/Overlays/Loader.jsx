@@ -113,7 +113,7 @@ const Loader = () => {
             animate="show"
             transition={{ duration: 1.9, ease: 'easeInOut' }}
           >
-            s
+            š
           </motion.span>
           <motion.span
             variants={variantsLetter}
@@ -145,7 +145,7 @@ const Loader = () => {
             animate="show"
             transition={{ duration: 2.6, ease: 'easeInOut' }}
           >
-            c
+            ć
           </motion.span>
           <motion.div
             initial={{ right: '98%' }}
