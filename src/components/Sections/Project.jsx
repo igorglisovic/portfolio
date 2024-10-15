@@ -5,10 +5,7 @@ import { Zoom } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
 import { Link } from 'react-router-dom'
 import LinkHover from '../UI/LinkHover'
-import {
-  scrollAttributes,
-  scrollAttributesV2,
-} from '../../data/scrollAtributes'
+import { scrollAttributes, scrollAttributesV2 } from '../../data/scrollAtributes'
 import Card from '../UI/Card'
 import { useEffect, useState } from 'react'
 import { useLocomotiveScroll } from 'react-locomotive-scroll'
@@ -52,7 +49,7 @@ const Project = ({ projectId }) => {
       <section data-scroll-section className={classes.project}>
         <Container>
           <div className={classes.content}>
-            <div className="slide-container">
+            <div className={classes['slide-container']}>
               <Zoom scale={0.1}>
                 {data.imgSlider.map((each, index) => (
                   <img
@@ -110,12 +107,7 @@ const Project = ({ projectId }) => {
                 ))}
               </ul>
             </div>
-            <a
-              {...scrollAttributes}
-              className={classes.btn}
-              href={data.link}
-              target="_blank"
-            >
+            <a {...scrollAttributes} className={classes.btn} href={data.link} target="_blank">
               View Project
             </a>
           </div>
@@ -140,11 +132,7 @@ const Project = ({ projectId }) => {
                 </Card>
               ))}
             </div>
-            <Link
-              {...scrollAttributes}
-              className={classes['project-btn']}
-              to="/projects"
-            >
+            <Link {...scrollAttributes} className={classes['project-btn']} to="/projects">
               View All
             </Link>
           </div>
