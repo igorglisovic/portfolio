@@ -6,6 +6,10 @@
   width: clamp(300px, 92vw, 1350px);
 }
 
+.slide-container {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
 .content {
   display: flex;
   flex-direction: column;
